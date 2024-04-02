@@ -447,25 +447,39 @@ video {
 }
 
 @font-face {
-  font-family: 'Outfit',sans-serif;
+  font-family: 'OutfitBold',sans-serif;
 
   font-style: normal;
 
-  font-weight: 400;
-
   font-display: swap;
 
-  src: url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+  src: url("../fonts/Outfit-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: 'OutfitRegular',sans-serif;
+
+  src: url("../fonts/Outfit-Regulard.ttf") ;
+}
+
+@font-face {
+  font-family: 'OutfitSemibold',sans-serif;
+
+  src: url("../fonts/Outfit-SemiBold.ttf") ;
 }
 
 h1 {
+  font-family: OutfitBold, sans-serif;
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
 h2 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-family: OutfitBold, sans-serif;
+  font-size: 2.7rem;
+  font-weight: 790;
+  --tw-text-opacity: 1;
+  color: rgb(64 71 66 / var(--tw-text-opacity));
 }
 
 h3 {
@@ -473,13 +487,31 @@ h3 {
   line-height: 1.75rem;
 }
 
+h4 {
+  font-family: OutfitBold, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 790;
+  --tw-text-opacity: 1;
+  color: rgb(30 168 79 / var(--tw-text-opacity));
+}
+
+h5 {
+  font-family: OutfitBold, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(41 40 54 / var(--tw-text-opacity));
+}
+
 h6 {
   font-size: .8rem;
 }
 
 p {
-  font-size: 1.1rem;
-  font-weight: 100;
+  font-family: OutfitSemiBold, sans-serif;
+  font-size: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(105 104 104 / var(--tw-text-opacity));
 }
 
 a {
