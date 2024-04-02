@@ -8,4 +8,54 @@
 
 @layer components{
     
+
+
+
+    /* ---------SERVICES----------- */
+    .faq__wrapper{
+        @apply flex flex-col lg:grid grid-cols-2
+    }
+    .faq__question{
+        @apply top-[5rem] relative p-3 lg:relative
+    }
+    .faq__cards h5 i.open{
+        @apply  transform rotate-180 w-fit h-fit transition-all lg:transform lg:rotate-180 lg:w-fit lg:h-fit lg:transition-all
+    }
+    .faq__cards .contents{
+        @apply max-h-[0rem] overflow-hidden transition-all 
+        flex flex-col gap-6 lg:max-h-fit lg:pt-6 lg:overflow-hidden
+    }
+    .faq__cards .contents.open{
+        @apply max-h-[50rem] transition-all pt-6 lg:max-h-[50rem] lg:transition-all lg:pt-6
+    }
 }
+
+@layer base {
+    @font-face {
+      font-family: 'Outfit',sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    }
+    h1 {
+        @apply text-4xl;
+      }
+      h2 {
+        @apply text-3xl ;
+      }
+      h3 {
+        @apply text-xl ;
+      }
+      h6{
+        @apply text-[.8rem]
+      }
+      p{
+        @apply text-[1.1rem] font-thin
+      }
+      a {
+        @apply text-[1rem] font-semibold text-center;
+      }
+
+      
+  }
