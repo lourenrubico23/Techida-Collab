@@ -14,6 +14,13 @@ module.exports = {
         vdark: "#212121",
         footertxt: "#b5b5b5",
       },
+        fontFamily: {
+          outfitbold: ["OutfitBold", "sans-serif"],
+          outfitregular: ["OutfitRegular", "sans-serif"],
+          outfitsemibold: ["OutfitSemiBold", "sans-serif"],
+        },
+     
+    
     },
   },
   plugins: [],

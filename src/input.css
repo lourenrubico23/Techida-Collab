@@ -7,56 +7,82 @@
 }
 
 @layer components{
-    
-
-
-
-    /* ---------SERVICES----------- */
-    .faq__wrapper{
-        @apply flex flex-col lg:grid grid-cols-2
-    }
-    .faq__question{
-        @apply top-[5rem] relative p-3 
-    }
-    .faq__cards h5 i.open{
-        @apply  transform rotate-180 w-fit h-fit transition-all 
-    }
-    .faq__cards .contents{
-        @apply max-h-[0rem] overflow-hidden transition-all 
-        flex flex-col gap-6 
-    }
-    .faq__cards .contents.open{
-        @apply max-h-[50rem] transition-all pt-6 
-    }
 
     /* -----------CONTACT----------- */
     .contact{
       @apply bg-primary;
     }
+
+ /* ---------SERVICES----------- */
+ .faq{
+  @apply bg-primary 
+ }
+.faq__wrapper{
+  @apply flex flex-col lg:grid grid-cols-2 
+}
+.faq__title{
+  @apply w-[60%]
+}
+.faq__question{
+  @apply top-[5rem] relative p-3 
+}
+.faq__cards{
+  @apply bg-lgrey mb-5 p-[1.5rem]
+}
+.faq__cards h5 i.open{
+  @apply  transform rotate-180 w-fit h-fit transition-all 
+}
+.faq__cards .contents{
+  @apply max-h-[0rem] overflow-hidden transition-all 
+  flex flex-col gap-6 
+}
+.faq__cards .contents.open{
+  @apply max-h-[50rem] transition-all pt-6 
+
 }
 
+
+}
+
+
+
+/* ------------------FONTS---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @layer base {
     @font-face {
-      font-family: 'Outfit',sans-serif;
+      font-family: 'OutfitBold',sans-serif;
       font-style: normal;
-      font-weight: 400;
       font-display: swap;
-      src: url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+      src: url("../fonts/Outfit-ExtraBold.ttf");
+    }
+    @font-face {
+      font-family: 'OutfitRegular',sans-serif;
+      src: url("../fonts/Outfit-Regulard.ttf") ;
+    }
+    @font-face {
+      font-family: 'OutfitSemibold',sans-serif;
+      src: url("../fonts/Outfit-SemiBold.ttf") ;
     }
     h1 {
-        @apply text-4xl;
+        @apply text-4xl font-outfitbold;
       }
       h2 {
-        @apply text-3xl ;
+        @apply text-[2.7rem] font-outfitbold text-clrtitle font-[790]
       }
       h3 {
         @apply text-xl ;
+      }
+      h4{
+        @apply text-[1.2rem] font-outfitbold text-secondary font-[790]
+      }
+      h5{
+        @apply text-[1.3rem] font-outfitbold font-semibold text-crdtitle
       }
       h6{
         @apply text-[.8rem]
       }
       p{
-        @apply text-[1.1rem] font-thin
+        @apply text-[1rem] font-outfitsemibold text-clrtext 
       }
       a {
         @apply text-[1rem] font-semibold text-center;
