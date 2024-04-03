@@ -13,6 +13,7 @@ module.exports = {
         lgrey: "#f0f0f0",
         vdark: "#212121",
         footertxt: "#b5b5b5",
+        bgfooter: "#1b1c1b",
       },
         fontFamily: {
           outfitbold: ["OutfitBold", "sans-serif"],

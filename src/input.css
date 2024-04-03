@@ -8,24 +8,75 @@
 
 @layer components{
     
+/* -----------------------------------------SERVICES PAGE----------------------------------- */
+/* ----------BANNER------------- */
+.banner{
+  @apply bg-bgfooter text-white
+}
+.bannernav a{
+  @apply text-white
+}
+.bannernav a:first-child{
+  @apply hover:text-secondary
+}
 
+/* ---------SERVICES CARDS------- */
+.services{
+  @apply py-[2rem]
+}
+.services__wrapper{
+  @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-6 
+}
+.services__title{
+  @apply lg:w-[50%] pb-4
+}
+.services__card{
+  @apply bg-lgrey mb-6 lg:mb-0 p-[2rem] relative z-[1] 
+}
+.services__card::before{
+  @apply content-[""] absolute top-0 left-0 h-[100%] w-0 bg-secondary z-[-1]
+  transition-all rounded-md duration-500
+}
+.services__card:hover::before{
+  @apply w-[100%] 
+}
+.services__card:hover a, .services__card:hover h3, .services__card:hover p, .services__card:hover i{
+  @apply text-white
+}
+.services__card .icon{
+  @apply text-[3rem] text-secondary pt-3 pb-3
+}
+.services__card h3{
+  @apply text-bgfooter 
+}
+.services__card a{
+  @apply text-secondary
+}
+.services__card p{
+  @apply mb-[1rem]
+}
 
-
- /* ---------SERVICES----------- */
+ /* ---------FAQ----------- */
  .faq{
-  @apply bg-primary 
+  @apply bg-primary py-[2rem]
  }
 .faq__wrapper{
-  @apply flex flex-col lg:grid grid-cols-2 
+  @apply flex flex-col lg:grid grid-cols-2 gap-3
 }
 .faq__title{
-  @apply w-[60%]
+  @apply lg:w-[60%] pb-6
 }
 .faq__question{
-  @apply top-[5rem] relative p-3 
+  @apply top-[5rem] relative pb-[3rem]
 }
 .faq__cards{
-  @apply bg-lgrey mb-5 p-[1.5rem]
+  @apply bg-lgrey mb-5 p-[.8rem] w-full
+}
+.faq__cards h5{
+  @apply grid grid-cols-[6fr,.5fr]
+}
+.faq__cards h5 i{
+  @apply text-secondary items-end
 }
 .faq__cards h5 i.open{
   @apply  transform rotate-180 w-fit h-fit transition-all 
@@ -37,6 +88,54 @@
 .faq__cards .contents.open{
   @apply max-h-[50rem] transition-all pt-6 
 }
+
+/* -------------FOOTER--------- */
+.footer{
+  @apply bg-bgfooter
+}
+.footer__wrapper{
+  @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 gap-4 items-center pb-5
+}
+.footer h6, a{
+  @apply text-footertxt
+}
+.footer h6{
+  @apply pb-[1rem] pt-[1rem] lg:pt-0
+}
+.footer ul li{
+  @apply pb-[1rem]
+}
+.footer a i{
+  @apply text-[.8rem] pr-3
+}
+.socials{
+  @apply bg-vdark rounded-sm p-7 
+}
+.socials p{
+  @apply mb-2
+}
+.socials img{
+  @apply w-[50%] pb-1
+}
+.media i{
+  @apply text-white bg-secondary p-3 rounded-full mr-1 
+}
+.site{
+  @apply  pt-[2rem] lg:p-0
+}
+.bottomFooter{
+  @apply border-t-[.5px] border-lgrey md:grid md:grid-cols-[1fr,2fr] lg:grid lg:grid-cols-[2fr,1fr]
+}
+.bottomFooter p, .terms{
+  @apply pt-2 pb-2 lg:pb-0 lg:pt-4
+}
+.bottomFooter .terms{
+  @apply ml-[10rem] md:ml-[17rem] lg:ml-[12rem]
+}
+.bottomFooter .terms a:first-child{
+  @apply border-r-[1px] border-lgrey pr-1
+}
+
 
 
 }
@@ -61,13 +160,13 @@
       src: url("../fonts/Outfit-SemiBold.ttf") ;
     }
     h1 {
-        @apply text-4xl font-outfitbold;
+        @apply text-[3rem] font-outfitbold font-[790];
       }
       h2 {
         @apply text-[2.7rem] font-outfitbold text-clrtitle font-[790]
       }
       h3 {
-        @apply text-xl ;
+        @apply text-[1.5rem] font-outfitsemibold font-[700];
       }
       h4{
         @apply text-[1.2rem] font-outfitbold text-secondary font-[790]
@@ -76,10 +175,10 @@
         @apply text-[1.3rem] font-outfitbold font-semibold text-crdtitle
       }
       h6{
-        @apply text-[.8rem]
+        @apply text-[1.1rem] font-outfitregular font-[600]
       }
       p{
-        @apply text-[1rem] font-outfitsemibold text-clrtext 
+        @apply text-[.9rem] font-outfitbold text-clrtext leading-7
       }
       a {
         @apply text-[1rem] font-semibold text-center;
