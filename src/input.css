@@ -211,7 +211,7 @@
       @apply flex flex-row gap-3 justify-center;
     }
     .blog__btn li a{
-      @apply bg-lgrey rounded-full py-[.3rem] px-[.7rem] font-normal hover:bg-secondary;
+      @apply bg-lgrey rounded-full py-[.3rem] px-[.7rem] font-normal hover:bg-secondary text-vdark;
     }
     .blog__btn li:first-child a{
       @apply bg-secondary;
@@ -458,10 +458,38 @@
   @layer utilities{
     /* ------------------BUTTONS---------------- */
     .btn{
-      @apply inline-block py-[.5rem] px-[1.3rem] rounded-full border-transparent border-[1.5px]
-      text-[1.1rem] font-bold;
+      @apply inline-block py-[.6rem] px-[1.3rem] rounded-full border-transparent border-[1.5px]
+      text-[1.1rem] font-bold cursor-pointer relative z-[1] overflow-hidden;
     }
-    .btn.bg--secondary{
-      @apply bg-secondary text-primary hover:bg-lgrey hover:text-vdark;
+    .btn.bg--vera{
+      @apply bg-secondary text-primary;
     }
+    .btn.bg--vera:hover{
+      @apply text-vdark;
+    }
+    .btn.bg--vera::after{
+      @apply content-[""] bg-lgrey absolute z-[-1] left-[-20%] right-[-20%] top-0 bottom-0 
+      skew-x-[-45deg] scale-x-[0] scale-y-[1] transition-all duration-700 border-secondary;
+    }
+    .btn.bg--vera:hover::after{
+      @apply skew-x-[-45deg] scale-x-[1] scale-y-[1] transition-all duration-500;
+    }
+
+    .btn.bg--verb{
+      @apply bg-secondary text-primary;
+    }
+    .btn.bg--verb:hover{
+      @apply text-vdark;
+    }
+    .btn.bg--verb{
+      @apply hover:bg-lgrey hover:text-vdark;
+    }
+    .btn.bg--verb::after{
+      @apply content-[""] bg-lgrey absolute z-[-1] left-[-20%] right-[-20%] top-0 bottom-0 
+      skew-x-[-45deg] scale-x-[0] scale-y-[1] transition-all duration-700  border-secondary;
+    }
+    .btn.bg--verb:hover::after{
+      @apply skew-x-[-45deg] scale-x-[1] scale-y-[1] transition-all duration-500;
+    }
+
   }
