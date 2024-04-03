@@ -12,14 +12,23 @@
 
 
  /* ---------SERVICES----------- */
+ .faq{
+  @apply bg-primary 
+ }
 .faq__wrapper{
-  @apply flex flex-col lg:grid grid-cols-2
+  @apply flex flex-col lg:grid grid-cols-2 
+}
+.faq__title{
+  @apply w-[60%]
 }
 .faq__question{
   @apply top-[5rem] relative p-3 
 }
+.faq__cards{
+  @apply bg-lgrey mb-5 p-[1.5rem]
+}
 .faq__cards h5 i.open{
-  @apply  transform rotate-180 w-fit h-fit transition-all
+  @apply  transform rotate-180 w-fit h-fit transition-all 
 }
 .faq__cards .contents{
   @apply max-h-[0rem] overflow-hidden transition-all 
@@ -28,8 +37,13 @@
 .faq__cards .contents.open{
   @apply max-h-[50rem] transition-all pt-6 
 }
+
+
 }
 
+
+
+/* ------------------FONTS---------------- */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @layer base {
     @font-face {

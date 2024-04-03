@@ -664,6 +664,11 @@ a {
 
 /* ---------SERVICES----------- */
 
+.faq {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 245 242 / var(--tw-bg-opacity));
+}
+
 .faq__wrapper {
   display: flex;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -676,10 +681,21 @@ a {
   }
 }
 
+.faq__title {
+  width: 60%;
+}
+
 .faq__question {
   position: relative;
   top: 5rem;
   padding: 0.75rem;
+}
+
+.faq__cards {
+  margin-bottom: 1.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 240 240 / var(--tw-bg-opacity));
+  padding: 1.5rem;
 }
 
 .faq__cards h5 i.open {
@@ -724,3 +740,5 @@ a {
   max-width: 80rem;
   padding: 1.5rem;
 }
+
+/* ------------------FONTS---------------- */
