@@ -7,6 +7,119 @@
 }
 
 @layer components{
+/* ---------------------------------BLOG PAGE---------------------- */
+    .blog{
+      @apply bg-primary pb-[2rem] pt-[2rem];
+    }
+    .blog__title p{
+      @apply pb-[2rem] lg:max-w-[50rem];
+    }
+    .blog__title h4{
+      @apply lg:text-[1.2rem];
+    }
+    .blog__title h2{
+      @apply lg:text-[2.7rem];
+    }
+    .blog__card{
+      @apply bg-lgrey pb-[1.5rem] lg:w-[25rem] md:w-[20rem] md:mb-[1rem];
+    }
+    .blog__card img{
+      @apply rounded-md lg:w-full md:w-[20rem];
+    }
+    .blog__card ul p{
+      @apply font-outfitsemibold text-[1rem];
+    }
+    .blog__card ul span{
+      @apply pr-[.5rem] text-secondary;
+    }
+    .blog__card ul{
+      @apply flex flex-row gap-14 py-[1rem] justify-center lg:gap-10 md:gap-3;
+    }
+    .blog__card .card__text{
+      @apply px-[1.1rem];
+    }
+    .blog__card .card__btn a{
+      @apply text-secondary font-bold;
+    }
+    .card__text h3{
+      @apply text-[1.4rem] font-bold leading-10 text-vdark pb-[1rem];
+    }
+    .card__text p{
+      @apply leading-8 pb-[1rem];
+    }
+    .blog__card .card__btn{
+      @apply px-[1.1rem];
+    }
+    .card__wrapper{
+      @apply grid grid-cols-1 gap-[1.5rem] lg:grid lg:grid-cols-3 lg:gap-[1.3rem] md:grid md:grid-cols-2 md:gap-[.1rem];
+    }
+    .blog__btn{
+      @apply flex flex-row gap-3 justify-center;
+    }
+    .blog__btn li a{
+      @apply bg-lgrey rounded-full py-[.3rem] px-[.7rem] font-normal hover:bg-secondary;
+    }
+    .blog__btn li:first-child a{
+      @apply bg-secondary;
+    }
+
+    /* -----------CONTACT----------- */
+    .contact{
+      @apply bg-primary pb-[2rem] pt-[2rem];
+    }
+    .contact__title p{
+      @apply pb-[2rem];
+    }
+    .contact__left h3{
+      @apply pb-[1rem] font-bold lg:text-[1.5rem];
+    }
+    .contact__left p{
+      @apply font-bold pb-[1rem] text-[1.2rem];
+    }
+    .contact__left i{
+      @apply text-secondary text-[1.7rem];
+    }
+    .contact__left ul{
+      @apply pl-[1rem];
+    }
+    .contact__left ul li{
+      @apply py-[1rem]
+    }
+    .contact__form ul li input{
+      @apply bg-lgrey w-[28rem] pl-[1rem] py-[1rem] mb-[1rem] lg:w-[20rem];
+    }
+    .contact__form ul li input::placeholder{
+      @apply text-[1rem] text-[#747778] font-semibold;
+    }
+    .contact__form ul input{
+      @apply bg-lgrey w-[28rem] pl-[1rem] py-[1rem] mb-[1rem] lg:w-[41rem];
+    }
+    .contact__form ul input::placeholder{
+      @apply text-[1rem] text-[#747778] font-semibold;
+    }
+    .contact__form ul textarea{
+      @apply bg-lgrey w-[28rem] pl-[1rem] py-[1rem] mb-[1rem] lg:w-[41rem];
+    }
+    .contact__form ul textarea::placeholder{
+      @apply text-[#747778] font-semibold;
+    }
+    .contact__wrapper{
+      @apply grid grid-cols-1 lg:grid lg:grid-cols-2;
+    }
+    .contact__form ul:first-child{
+      @apply grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-[3.5rem];
+    }
+
+
+
+    /* -----------MAP----------- */
+    .map{
+      @apply bg-primary pb-[2rem] pt-[2rem];
+    }
+    .map iframe{
+      @apply w-[28rem] h-[25rem] lg:w-[80rem];
+    }
+
     
 /* -----------------------------------------SERVICES PAGE----------------------------------- */
 /* ----------BANNER------------- */
@@ -87,6 +200,7 @@
 }
 .faq__cards .contents.open{
   @apply max-h-[50rem] transition-all pt-6 
+
 }
 
 /* -------------FOOTER--------- */
@@ -185,4 +299,15 @@
       }
 
       
+  }
+
+  @layer utilities{
+    /* ------------------BUTTONS---------------- */
+    .btn{
+      @apply inline-block py-[.5rem] px-[1.3rem] rounded-full border-transparent border-[1.5px]
+      text-[1.1rem] font-bold;
+    }
+    .btn.bg--secondary{
+      @apply bg-secondary text-primary hover:bg-lgrey hover:text-vdark;
+    }
   }
