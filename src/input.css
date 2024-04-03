@@ -28,6 +28,11 @@
     .faq__cards .contents.open{
         @apply max-h-[50rem] transition-all pt-6 
     }
+
+    /* -----------CONTACT----------- */
+    .contact{
+      @apply bg-primary;
+    }
 }
 
 @layer base {
