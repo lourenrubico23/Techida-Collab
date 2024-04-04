@@ -9,21 +9,225 @@
 /* ---------------------------------HOME PAGE START---------------------- */
 .homebanner .homebanner__wrapper
 {
-  @apply grid grid-cols-1 place-items-center
+  @apply grid grid-cols-1 lg:grid-cols-2 lg:gap-[5rem]  place-items-center lg:pt-[10rem] 
 }
-.homebanner .homebanner__img
+.homebanner__img img
 {
-  @apply lg:pt-[10rem] 
+  @apply lg:max-w-[50rem] md:max-w-[48rem] md:block lg:block 
 }
+
+.homebanner .homebanner__text
+{
+  @apply lg:pr-[8rem] md:pr-[2rem] pr-[1rem];
+}
+
 .homebanner .homebanner__text p
 {
-  @apply text-[1.2rem] leading-[2.5rem] pt-[1rem] pb-[1rem]
+  @apply text-[1rem] lg:text-[1rem] leading-[2rem] md:leading-[2.5rem] lg:leading-[2rem] pt-[1rem] pb-[1rem] 
 }
 #particles-js
 {
-  @apply h-[100%] bg-[#f7f5f2]
+  @apply bg-[#f7f5f2]
 }
 
+/* About Us */
+.aboutUs
+{
+  @apply pb-16
+}
+.aboutUs .aboutUs__text 
+{
+ @apply pr-[1rem]
+}
+.aboutUs .aboutUs__text h3
+{
+  @apply text-[2rem]
+}
+.aboutUs .aboutUs__text p
+{
+  @apply text-[1rem] pb-[1rem]
+}
+
+.aboutUs__services__wrapper{
+  @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-6 
+}
+
+.aboutUs__services__card{
+  @apply bg-lgrey mb-3 lg:mb-0 pl-[1rem] py-[1rem] rounded-md relative z-[1] 
+  flex flex-row items-center gap-4
+}
+.aboutUs__services__card::before{
+  @apply content-[""] absolute top-0 left-0 h-[100%] w-0 bg-secondary z-[-1]
+  transition-all rounded-md duration-500
+}
+.aboutUs__services__card:hover::before{
+  @apply w-[100%] 
+}
+.aboutUs__services__card:hover a, .aboutUs__services__card:hover h3, .aboutUs__services__card:hover p, 
+.aboutUs__services__card:hover i{
+  @apply text-white
+}
+.aboutUs__services__card .icon{
+  @apply text-[1.8rem] text-secondary pt-3 pb-3
+}
+.aboutUs__services__card p{
+  @apply text-bgfooter font-bold pt-[1rem]
+}
+
+.aboutUs__progress
+{
+  @apply text-vdark flex flex-col text-left
+}
+.progress__container
+{
+  @apply relative max-w-[500px] w-[100%] bg-white my-0
+  py-[10px] pr-[20px] rounded-sm
+}
+.progress__container .aboutUs__progress
+{
+  @apply w-[100%] mx-0 mb-[2rem]
+}
+.aboutUs__progress .aboutUs__progress__title
+{
+  @apply block text-[20px] font-bold text-vdark
+}
+.aboutUs__progress .aboutUs__skill__bar
+{
+  @apply h-[8px] w-[100%] rounded-sm bg-primary
+  mt-[6px]
+}
+
+/* choose */
+.choose .choose__text 
+{
+ @apply pr-[2rem]
+}
+.choose .choose__text h3
+{
+ @apply text-[2rem] font-bold
+}
+.choose__card .choose__card__item
+{
+  @apply bg-primary px-[1rem] py-[2rem] mb-6 rounded-md
+}
+.choose__card .choose__card__item:first-child
+{
+  @apply mt-3
+}
+.choose__card .choose__card__item h4
+{
+  @apply text-[3rem]
+}
+.choose .choose__text small
+{
+  @apply text-secondary font-bold text-[1.1rem] uppercase
+}
+.choose .choose__text p
+{
+  @apply text-[1rem]
+}
+
+/* counter */
+.counter
+{
+  @apply bg-vdark text-center mb-[5rem]
+}
+.counter .counter__wrapper
+{
+  @apply p-12
+}
+.counter .counter__item
+{
+  @apply my-7
+}
+.counter .counter__item p 
+{
+  @apply font-bold text-primary text-[1.1rem]
+  lg:text-[1.3rem]
+}
+.counter .counter__item .count
+{
+  @apply text-secondary text-[3.5rem] lg:font-extrabold
+}
+.counter .counter__wrapper 
+{
+  @apply lg:flex lg:flex-row items-center justify-between gap-10
+}
+
+/* tiny slider  */
+.tns-nav{
+  @apply
+  z-[10] flex justify-center items-center pt-[1.2rem]
+}
+.tns-nav button{
+  @apply   
+  m-[.5rem]
+  w-[10px]
+  h-[10px]
+  rounded-[100%]
+  border-none
+  bg-gray-300
+  }
+.tns-nav button.tns-nav-active{
+  @apply bg-[#869791]
+}
+
+/* logo slider */
+.logo__slider
+{
+  @apply bg-primary
+}
+.logo__slider__wrapper .logo__cards img
+{
+  @apply grayscale  hover:grayscale-0;
+}
+
+/* testimonials */
+
+/* .testimonials 
+{
+  @apply mx-[1rem];
+} */
+.testimonials .testimonials__cards
+{
+  @apply bg-primary py-[1rem] pl-[1rem] pr-[.5rem] 
+}
+.testimonials .testimonials__cards__profile
+{
+  @apply flex flex-row gap-4
+}
+.testimonials .testimonials__cards__profile img
+{
+  @apply rounded-full w-[4rem] h-[4rem]
+}
+.testimonials .testimonials__cards__profile ul 
+{
+  @apply flex flex-row gap-1
+}
+.testimonials .testimonials__cards__profile ul li i
+{
+  @apply text-[#b8b800]
+}
+.testimonials .testimonials__text small
+{
+  @apply text-secondary font-bold text-[.8rem] uppercase
+}
+.testimonials .testimonials__text h3
+{
+  @apply pr-[9rem] text-[2rem] tracking-tighter
+}
+.testimonials__cards__profile__name
+{
+  @apply text-[1rem] font-bold
+}
+.testimonials__cards__profile
+{
+  @apply pt-4
+}
+.testimonials__cards p
+{
+  @apply pt-[1rem] pr-[1.1rem]
+}
 
 /* ---------------------------------HOME PAGE END---------------------- */
 
@@ -54,7 +258,7 @@
 }
 .header__action.open
 {
-  @apply w-[100%]  pt-[1rem] px-[1rem] mt-[4.7rem] transition-all
+  @apply w-[100%]  pt-[1rem] px-[1rem] mt-[4.7rem] transition-all z-[9999]
         
 }
 .header__wrapper
@@ -154,9 +358,6 @@
 {
   @apply flex items-center justify-between 
 }
-
-
-
 /* ---------------------------------HOME PAGE HEADER END---------------------- */
 
 
