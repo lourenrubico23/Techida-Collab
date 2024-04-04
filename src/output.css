@@ -1612,7 +1612,7 @@ a {
 
 .services__card h3:is(.dark *) {
   --tw-text-opacity: 1;
-  color: rgb(247 245 242 / var(--tw-text-opacity));
+  color: rgb(248 246 244 / var(--tw-text-opacity));
 }
 
 .services__card a {
@@ -1626,14 +1626,12 @@ a {
 
 .services__card p:is(.dark *) {
   --tw-text-opacity: 1;
-  color: rgb(247 245 242 / var(--tw-text-opacity));
+  color: rgb(248 246 244 / var(--tw-text-opacity));
 }
 
 /* ---------FAQ----------- */
 
 .faq {
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 245 242 / var(--tw-bg-opacity));
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -1689,7 +1687,7 @@ a {
 
 .faq__cards h5:is(.dark *) {
   --tw-text-opacity: 1;
-  color: rgb(247 245 242 / var(--tw-text-opacity));
+  color: rgb(248 246 244 / var(--tw-text-opacity));
 }
 
 .faq__cards h5 i {
@@ -1870,6 +1868,45 @@ a {
   padding-right: 0.25rem;
 }
 
+/* --------------------------------------------DARKMODE-------------------------------------- */
+
+body h1:is(.dark *), h2:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(248 246 244 / var(--tw-text-opacity));
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.right-\[-104px\] {
+  right: -104px;
+}
+
+.right-\[-150px\] {
+  right: -150px;
+}
+
+.right-\[-263px\] {
+  right: -263px;
+}
+
+.top-\[-28px\] {
+  top: -28px;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-\[4rem\] {
+  margin-bottom: 4rem;
+}
+
 .block {
   display: block;
 }
@@ -1916,7 +1953,7 @@ a {
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(247 245 242 / var(--tw-bg-opacity));
+  background-color: rgb(248 246 244 / var(--tw-bg-opacity));
 }
 
 .bg-secondary {
@@ -2355,7 +2392,7 @@ a {
   width: 100%;
   border-radius: 0.125rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(247 245 242 / var(--tw-bg-opacity));
+  background-color: rgb(248 246 244 / var(--tw-bg-opacity));
 }
 
 /* choose */
@@ -2373,7 +2410,7 @@ a {
   margin-bottom: 1.5rem;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(247 245 242 / var(--tw-bg-opacity));
+  background-color: rgb(248 246 244 / var(--tw-bg-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 2rem;
@@ -2422,7 +2459,7 @@ a {
   font-size: 1.1rem;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(247 245 242 / var(--tw-text-opacity));
+  color: rgb(248 246 244 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
@@ -2485,7 +2522,7 @@ a {
 
 .logo__slider {
   --tw-bg-opacity: 1;
-  background-color: rgb(247 245 242 / var(--tw-bg-opacity));
+  background-color: rgb(248 246 244 / var(--tw-bg-opacity));
 }
 
 .logo__slider__wrapper .logo__cards img {
@@ -2507,7 +2544,7 @@ a {
 
 .testimonials .testimonials__cards {
   --tw-bg-opacity: 1;
-  background-color: rgb(247 245 242 / var(--tw-bg-opacity));
+  background-color: rgb(248 246 244 / var(--tw-bg-opacity));
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
@@ -2568,6 +2605,11 @@ a {
 /* ---------------------------------HOME PAGE END---------------------- */
 
 /* ------------------FONTS---------------- */
+
+.dark\:bg-darkmode:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 21 21 / var(--tw-bg-opacity));
+}
 
 @media (min-width: 768px) {
   .md\:invisible {
