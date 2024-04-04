@@ -6,17 +6,19 @@
     <title>Techida - Business Services</title>
     <link rel="stylesheet" href="/src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"/>
 </head>
 <body>
     
-    <div class="wrapper bg-primary" id="particles-js">
+    <div class="wrapper bg-primary">
         <header class="header">
             <div class="container">
                 <div class="header__wrapper">
                     <a href="#"><img src="./img/home/logo.png" alt=""></a>
         
-                    <ul class="header__navd">
+                    <ul class="header__navd md:invisible lg:visible">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Services</a></li>
@@ -46,12 +48,12 @@
                             <li><a href="#">Contact Us</a></li>
                         </ul>
                         <div class="header__action__btn block lg:hidden">
-                            <button class="btn bg--secondary">Join now</button>
+                            <button class="btn bg--verb">Join now</button>
                             <button><i class="fa-solid fa-moon"></i></button>
                         </div>
                     </div>
                     <div class="header__action__btn hidden lg:block">
-                        <button class="btn bg--secondary">Join now</button>
+                        <button class="btn bg--verb">Join now</button>
                         <button><i class="fa-solid fa-moon"></i></button>
                     </div>
                     <div class="burger__menu">
@@ -63,11 +65,11 @@
             </div>
         </header>
 
-        <section class="homebanner">
+    <section class="homebanner">
             <div class="container">
                 <div class="homebanner__wrapper">
                     <div class="homebanner__text">
-                        <h1>Excellent IT <br> <span class="text-secondary">Solutions</span> For Your Success</h1>
+                        <h1>Excellent IT <span class="text-secondary">Solutions</span> For Your Success</h1>
                         <p>
                             At Any Rate, Lorem Ipsum Dolor Sit Amet Consectetur
                              Adipisicing Elit. Eaque Amet, Quod Doloribus The 
@@ -75,7 +77,7 @@
                              Flexible Production Planning And The Distribution Of 
                              Repetitive Aspect
                             </p>
-                            <button class="btn bg--secondary">Join now</button>
+                            <button class="btn bg--verb">Join now</button>
                     </div>
                     <div class="homebanner__img">
                         <img src="./img/home/banner.png" alt="">
@@ -83,38 +85,414 @@
                 </div>
             </div>
         </section>
-    </div>
+        </div>
 
-   <section class="counter">
-    <div class="container">
-        <div class="counter__wrapper">
+    <section class="aboutUs">
+        <div class="container">
+            <div class="aboutUs__wrapper">
+                <div class="aboutUs__item mb-4">
+                <div class="aboutUs__text">
+                    <small>About Us</small>
+                    <h3>The Best IT Solution Since <span class="text-secondary">2015</span></h3>
+                    <p >Although, Final Stages Of The Internal Network 
+                        Gives A Complete Experience Of The Parameter Of Speculative Environment , 
+                        Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Eligendi Voluptas 
+                        Quibusdam Libero Quos Rem Unde, Sequi Distinctio Eum Excepturi Nobis Facere 
+                        Expedita Sint Nulla Aliquam, Odio Ea Laboriosam Hic? Consectetur Ullam Evenie</p>
+                        <button class="btn bg--verb">Join now</button>
+                    </div>
 
-            <!-- item 1 -->
-            <div class="counter__item">
-
-            </div>
-
-            <!-- item 2 -->
-            <div class="counter__item">
+                    <div class="aboutUs__image">
+                        <img src="./img/home/about us.png" alt="">
+                    </div>
                 
             </div>
 
-            <!-- item 3 -->
-            <div class="counter__item">
-                
+            <div class="aboutUs__item mb-[4rem]">
+                <div class="aboutUs__image">
+                    <img src="./img/home/about us 2.png" alt="">
+                </div>
+                <div class="aboutUs__text">
+                    <h3  class="font-bold">We Deal With The Aspects Of Professional <span class="text-secondary">IT Services</span></h3>
+                    <p>Although, Final Stages Of The Internal Network Gives A Complete 
+                        Experience Of The Parameter Of Speculative Environment</p>
+                    
+                        <div class="aboutUs__services__wrapper">
+                            <!-- services 1 -->
+                            <div class="aboutUs__services__card">
+                              <i class="fa-solid fa-map icon"></i>
+                              <p>World Wide Services<p>
+                            </div>
+                            <!-- services 2 -->
+                            <div class="aboutUs__services__card">
+                              <i class="fa-solid fa-headset icon"></i>
+                              <p>Support 24h/24</p>
+                            </div>
+                            <!-- services 3 -->
+                            <div class="aboutUs__services__card">
+                              <i class="fa-solid fa-gamepad icon"></i>
+                              <p>Easy to Reach</p>
+                            </div>
+                            <!-- services 4 -->
+                            <div class="aboutUs__services__card">
+                              <i class="fa-solid fa-star icon"></i>
+                              <p>First on Field</p>
+                            </div>
+                          </div>
+                    </div>
             </div>
 
-            <!-- item 4 -->
-            <div class="counter__item">
-                
+            <div class="aboutUs__item">
+            <div class="aboutUs__text">
+                <h3>We Are Here To IT Solution With 20 Years Of <span class="text-secondary">Experience</span></h3>
+                <p class="pt-3">
+                    Although, Final Stages Of The Internal Network Gives 
+                    A Complete Experience Of The Parameter Of Speculative 
+                    Environment
+                </p>
+
+                <div class="progress__container">
+                <div class="aboutUs__progress">
+                <span class="aboutUs__progress__title">App Development</span>
+
+                <div class="aboutUs__skill__bar">
+                    <span class="skill__per relative block h-[100%] w-[70%] rounded-sm bg-secondary">
+                        <span class="tool__tip absolute right-[-104px] top-[-28px]">70%</span>
+                    </span>
+                </div>
+                </div>
+
+                <div class="aboutUs__progress">
+                    <span class="aboutUs__progress__title">UI/UX Design</span>
+    
+                    <div class="aboutUs__skill__bar ">
+                        <span class="skill__per  relative block h-[100%] w-[20%] rounded-sm bg-secondary">
+                            <span class="tool__tip absolute right-[-263px] top-[-28px]">20%</span>
+                        </span>
+                    </div>
+                    </div>
+
+                    <div class="aboutUs__progress">
+                        <span class="aboutUs__progress__title">Web Development</span>
+        
+                        <div class="aboutUs__skill__bar">
+                            <span class="skill__per  relative block h-[100%] w-[55%] rounded-sm bg-secondary">
+                                <span class="tool__tip absolute right-[-150px] top-[-28px]">55%</span>
+                            </span>
+                        </div>
+                        </div>
+            </div>
+
+                </div>
+
+                <div class="aboutUs__image">
+                    <img src="./img/home/about us 3.png" alt="">
+                </div> 
+        </div>
             </div>
         </div>
-    </div>
-   </section>
+    </section>
+
+    <section class="counter">
+        <div class="container">
+            <div class="counter__wrapper">
+    
+                <!-- item 1 -->
+                <div class="counter__item">
+                    <h1 class="count">500</h1>
+                    <p>Happy Clients</p>
+                </div>
+    
+                <!-- item 2 -->
+                <div class="counter__item">
+                    <h1 class="count">60</h1>
+                    <p>Hard Worker</p>
+                </div>
+    
+                <!-- item 3 -->
+                <div class="counter__item">
+                    <h1 class="count">800</h1>
+                    <p>Complete Project</p>
+                </div>
+    
+                <!-- item 4 -->
+                <div class="counter__item">
+                    <h1 class="count">30</h1>
+                    <p>Year of Experiences</p>
+                </div>
+            </div>
+        </div>
+       </section>
+    
+       <section class="choose">
+        <div class="container">
+            <div class="choose__wrapper">
+                <div class="choose__text">
+                    <small>Why choose Us</small>
+                    <h3>Why Our Clients Choose Us?</h3>
+                    <p>As A Matter Of Fact The Unification Of The Coherent Software Provides A Strict 
+                        Control Over The Accomplishment Of Intended 
+                        Estimation</p>
+                </div>
+                
+                <div class="choose__card">
+                <div class="choose__card__item">
+                <h4>01.</h4>
+                <h6>Latest Technologies</h6>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                     Optio Unde, Exped Ita Nesciunt Quibusdam Quis Tempore 
+                     Quas Tenetur</p>
+                </div>
 
 
+                <div class="choose__card__item">
+                    <h4>02.</h4>
+                    <h6>Unique Solutions</h6>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                         Optio Unde, Exped Ita Nesciunt Quibusdam Quis Tempore 
+                         Quas Tenetur</p>
+                    </div>
+
+                    <div class="choose__card__item">
+                        <h4>03.</h4>
+                        <h6>Powerful Strategies</h6>
+                        <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                             Optio Unde, Exped Ita Nesciunt Quibusdam Quis Tempore 
+                             Quas Tenetur</p>
+                        </div>
+            </div>
+            </div>
+        </div>
+       </section>
+
+       <section class="logo__slider">
+        <div class="container">
+            <div class="logo__slider__wrapper">
+                <!-- card1 -->
+                <div class="logo__cards">
+                    <img src="./img/home/ultra winner.png" alt="">
+                </div>
+                <!-- card2 -->
+                <div class="logo__cards">
+                    <img src="./img/home/logo ipsum box.png" alt="">
+                </div>
+                <!-- card3 -->
+                <div class="logo__cards">
+                    <img src="./img/home/logo ipsum circle.png" alt="">
+                </div>
+                <!-- card4 -->
+                <div class="logo__cards">
+                    <img src="./img/home/logo ipsum violet.png" alt="">
+                </div>
+                <!-- card5 -->
+                <div class="logo__cards">
+                    <img src="./img/home/logo ipsum gold.png" alt="">
+                </div>
+                <!-- card6 -->
+                <div class="logo__cards">
+                    <img src="./img/home/ultra clear.png" alt="">
+                </div>
+            </div>
+        </div>
+       </section>
+      
+       <section class="testimonials">
+        <div class="container">
+            <div class="testimonials__wrapper">
+                <div class="testimonials__text">
+                    <small>Testimonials</small>
+                    <h3>Customers Testmonials</h3>
+                    <p>As A Matter Of Fact The Unification Of The Coherent Software Provides A Strict 
+                        Control Over The Accomplishment Of Intended 
+                        Estimation</p>
+                </div>
+
+                <div class="testimonials__slider pt-6">
+                
+                    <div class="testimonials__cards">
+                       <div class="testimonials__cards__profile">
+                        <img src="./img/home/testimonials-1.jpg" alt="">
+
+                        <div>
+                        <span class="testimonials__cards__profile__name">Ahmad Errami</span>
+                        <ul>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star"></i></li>
+                            <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                            <li><i class="fa-regular fa-star"></i></li>
+                        </ul>
+                       </div>
+                       </div>
+                       <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Explicabo Earum Id 
+                        Assumenda Ad Neque Recusandae, Quasi Deleniti Voluptatum Eos
+                         Vel Quas Molestias Vel Ad Neque Recusandae, Quasi Deleniti Voluptatum Eos
+                         Vel Quas Molestias Vel  Quas Molestias?</p>
+                    </div>
+
+                    <div class="testimonials__cards">
+                        <div class="testimonials__cards__profile">
+                         <img src="./img/home/testimonials-2.jpg" alt="">
+ 
+                         <div>
+                         <span class="testimonials__cards__profile__name">John Wick</span>
+                         <ul>
+                             <li><i class="fa-solid fa-star"></i></li>
+                             <li><i class="fa-solid fa-star"></i></li>
+                             <li><i class="fa-solid fa-star"></i></li>
+                             <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                             <li><i class="fa-regular fa-star"></i></li>
+                         </ul>
+                        </div>
+                        </div>
+                        <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Explicabo Earum Id 
+                         Assumenda Ad Neque Recusandae, Quasi Deleniti Voluptatum Eos
+                          Vel Quas Molestias Vel Ad Neque Recusandae, Quasi Deleniti Voluptatum Eos
+                          Vel Quas Molestias Vel  Quas Molestias?</p>
+                     </div>
+
+                     <div class="testimonials__cards">
+                        <div class="testimonials__cards__profile">
+                         <img src="./img/home/testimonials-3.jpg" alt="">
+ 
+                         <div>
+                         <span class="testimonials__cards__profile__name">Saul Goodman</span>
+                         <ul>
+                             <li><i class="fa-solid fa-star"></i></li>
+                             <li><i class="fa-solid fa-star"></i></li>
+                             <li><i class="fa-solid fa-star"></i></li>
+                             <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                             <li><i class="fa-regular fa-star"></i></li>
+                         </ul>
+                        </div>
+                        </div>
+                        <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Explicabo Earum Id 
+                         Assumenda Ad Neque Recusandae, Quasi Deleniti Voluptatum Eos
+                          Vel Quas Molestias Vel Ad Neque Recusandae, Quasi Deleniti Voluptatum Eos
+                          Vel Quas Molestias Vel  Quas Molestias?</p>
+                     </div>
+
+                     <div class="testimonials__cards">
+                        <div class="testimonials__cards__profile">
+                         <img src="./img/home/testimonials-4.jpg" alt="">
+ 
+                         <div>
+                         <span class="testimonials__cards__profile__name">Adam Smith</span>
+                         <ul>
+                             <li><i class="fa-solid fa-star"></i></li>
+                             <li><i class="fa-solid fa-star"></i></li>
+                             <li><i class="fa-solid fa-star"></i></li>
+                             <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                             <li><i class="fa-regular fa-star"></i></li>
+                         </ul>
+                        </div>
+                        </div>
+                        <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Explicabo Earum Id 
+                         Assumenda Ad Neque Recusandae, Quasi Deleniti Voluptatum Eos
+                          Vel Quas Molestias Vel Ad Neque Recusandae, Quasi Deleniti Voluptatum Eos
+                          Vel Quas Molestias Vel  Quas Molestias?</p>
+                     </div>
+
+                     <div class="testimonials__cards">
+                        <div class="testimonials__cards__profile">
+                         <img src="./img/home/testimonials-5.jpg" alt="">
+ 
+                         <div>
+                         <span class="testimonials__cards__profile__name">Gustavo Fring</span>
+                         <ul>
+                             <li><i class="fa-solid fa-star"></i></li>
+                             <li><i class="fa-solid fa-star"></i></li>
+                             <li><i class="fa-solid fa-star"></i></li>
+                             <li><i class="fa-solid fa-star-half-stroke"></i></li>
+                             <li><i class="fa-regular fa-star"></i></li>
+                         </ul>
+                        </div>
+                        </div>
+                        <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Explicabo Earum Id 
+                         Assumenda Ad Neque Recusandae, Quasi Deleniti Voluptatum Eos
+                          Vel Quas Molestias Vel Ad Neque Recusandae, Quasi Deleniti Voluptatum Eos
+                          Vel Quas Molestias Vel  Quas Molestias?</p>
+                     </div>
+
+                </div>         
+            </div>
+        </div>
+       </section>
+       
+     <!-- tiny slider js -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+       
+     <script>
+        var slider = tns({
+        container: '.testimonials__slider',
+        items: 1,
+        slideBy: 'page',
+        autoplay: true,
+        controls: false,
+        mouseDrag: true,
+        navPosition: "bottom",
+        autoplayButtonOutput: false,
+    
+        responsive: {
+          414: {
+            gutter: 20,
+            items: 1
+          },
+          700: {
+            gutter: 30
+          },
+          900: {
+            items: 3
+          }
+        }
+        
+      });
+       </script>
+       
+   <script>
+    var slider = tns({
+    container: '.logo__slider__wrapper',
+    items: 1,
+    slideBy: 'page',
+    autoplay: true,
+    controls: false,
+    mouseDrag: true,
+    autoplayButtonOutput: false,
+    nav: false,
+
+    responsive: {
+      414: {
+        gutter: 20,
+        items: 2
+      },
+      700: {
+        gutter: 30
+      },
+      900: {
+        items: 3
+      }
+    }
+    
+  });
+   </script>
+
+   <!-- particle js -->
     <script src="./js/particle/particles.js"></script>
     <script src="./js/particle/app.js"></script>
     <script src="./js/script.js"></script>
+
+    <!-- counter js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+    <script>
+        $('.count').counterUp({
+            delay: 1,
+            time:300
+        })
+    </script>
 </body>
 </html>

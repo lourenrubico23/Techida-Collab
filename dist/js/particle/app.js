@@ -23,7 +23,7 @@ particlesJS('particles-js',
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#212121"
       },
       "shape": {
         "type": "circle",
@@ -122,7 +122,7 @@ particlesJS('particles-js',
     "retina_detect": true,
     "config_demo": {
       "hide_card": false,
-      "background_color": "#b61924",
+      "background_color": "#212121",
       "background_image": "",
       "background_position": "50% 50%",
       "background_repeat": "no-repeat",
