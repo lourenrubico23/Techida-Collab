@@ -17,6 +17,15 @@ links.forEach((link) => {
   });
 });
 
+/* Darkmode */
+const darkmode = document.querySelector("#toggle");
+darkmode.addEventListener("click", () => {
+  document.documentElement.classList.toggle("dark");
+});
+const darkmodeM = document.querySelector("#toggledark");
+darkmodeM.addEventListener("click", () => {
+  document.documentElement.classList.toggle("dark");
+});
 
 
 /* When the user clicks on the button, 

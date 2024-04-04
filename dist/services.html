@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,61 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-  <body>
+  <body class=" bg-primary dark:bg-darkmode transition-all ease-out duration-300">
+
+    <!-- HEADER STARTS -->
+      <header class="header">
+          <div class="container">
+              <div class="header__wrapper">
+                  <a href="#"><img src="./img/home/logo.png" alt=""></a>
+      
+                  <ul class="header__navd">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Pages</a></li>
+                      <li><a href="#">Portfolio</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                  </ul>
+                  <div class="header__action">
+                     
+                      <ul class="header__navm">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">About</a></li>
+                          <li><a href="#">Services</a></li>
+                          <li>
+                              
+                              <a href="#" onclick="myFunction()" class="dropbtn">Pages</a>
+                              <div id="myDropdown" class="dropdown-content">
+                                  <a href="#home">404 Not Found</a>
+                                  <a href="#about">Home</a>
+                                  <a href="#contact">About</a>
+                                  <a href="#contact">Services</a>
+                                </div>
+                          </li>
+                          <li><a href="#">Portfolio</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">Contact Us</a></li>
+                      </ul>
+                      <div class="header__action__btn block lg:hidden">
+                          <button class="btn bg--secondary">Join now</button>
+                          <button><i id="toggledark" class="fa-solid fa-moon"></i></button>
+                      </div>
+                  </div>
+                  <div class="header__action__btn hidden lg:block">
+                      <button class="btn bg--secondary">Join now</button>
+                      <button><i id="toggle" class="fa-solid fa-moon"></i></button>
+                  </div>
+                  <div class="burger__menu">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </div>
+              </div>
+          </div>
+      </header>
+    <!-- HEADER ENDS -->
 
     <!-- BANNER STARTS -->
     <section class="banner">
@@ -138,6 +192,70 @@
    </section>
    <!-- FAQ ENDS -->
 
+   <!-- CONTACTS STARTS -->
+   <section class="contact">
+    <div class="container">
+            <div class="contact__title">
+                <h4>Contact</h4>
+                <h2>Contact Us For Any Questions</h2>
+                <p>As A Matter Of Fact The Unification Of The Coherent Software
+                     Provides A Strict Control Over The Accomplishment Of Intended
+                      Estimation</p>
+            </div>
+        <div class="contact__wrapper">
+            <div class="contact__left">
+                <h3>Contact Info :</h3>
+                <ul>
+                    <li class="flex gap-6">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Example@Example.Com</p>
+                    </li>
+                    <li class="flex gap-6">
+                        <i class="fa-solid fa-mobile-button"></i>
+                        <p>+123 456 6789</p>            
+                    </li>
+                    <li class="flex gap-6">
+                        <i class="fa-solid fa-location-dot"></i> 
+                        <p>A108 Adam Street, New York, NY 535022</p>                           
+                    </li>
+                    <li class="flex gap-6">
+                        <i class="fa-brands fa-instagram"></i> 
+                        <p>Techida-Company</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact__form">
+                <ul>
+                    <li>
+                        <input type="text" placeholder="name">
+                    </li>
+                    <li>
+                        <input type="text" placeholder="subject">
+                    </li>
+                </ul>
+                <ul>
+                    <input type="text" placeholder="email">
+                </ul>
+                <ul>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                </ul>
+                <div class="contact__btn">
+                    <a class="btn bg--vera" href="">Send Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <!-- CONTACTS ENDS -->
+
+   <!-- MAP STARTS -->
+   <section class="map">
+    <div class="container">
+        <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9050207912896!2d-0.14675028449633118!3d51.514958479636384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad554c335c1%3A0xda2164b934c67c1a!2sOxford+St%2C+London%2C+UK!5e0!3m2!1sen!2sro!4v1485889312335" allowfullscreen=""></iframe>
+    </div>
+   </section>
+   <!-- MAP ENDS -->
+
    <!-- FOOTER STARTS -->
    <footer class="footer">
     <div class="container">
@@ -181,18 +299,20 @@
           </ul>
         </div>
       </div>
-      <div class="bottomFooter">
+      
+    </div>
+    <div class="bottomFooter">
         <p>&copy; 2024 Created By: <a href="">Erramix</a></p>
         <div class="terms">
           <a href="">Terms Of Use</a>
           <a href="">Privacy Policy</a>
         </div>
       </div>
-    </div>
-    
    </footer>
    <!-- FOOTER ENDS -->
 
    <script src="./js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+
   </body>
 </html>
