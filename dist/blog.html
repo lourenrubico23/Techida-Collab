@@ -6,9 +6,63 @@
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body class=" bg-primary">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="#"><img src="./img/home/logo.png" alt=""></a>
     
+                <ul class="header__navd">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="header__action">
+                   
+                    <ul class="header__navm">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li>
+                            
+                            <a href="#" onclick="myFunction()" class="dropbtn">Pages</a>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#home">404 Not Found</a>
+                                <a href="#about">Home</a>
+                                <a href="#contact">About</a>
+                                <a href="#contact">Services</a>
+                              </div>
+                        </li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <div class="header__action__btn block lg:hidden">
+                        <button class="btn bg--secondary">Join now</button>
+                        <button><i class="fa-solid fa-moon"></i></button>
+                    </div>
+                </div>
+                <div class="header__action__btn hidden lg:block">
+                    <button class="btn bg--secondary">Join now</button>
+                    <button><i class="fa-solid fa-moon"></i></button>
+                </div>
+                <div class="burger__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <!-- Banner -->
     <section class="banner">
         <div class="container">
@@ -41,9 +95,9 @@
                         <img src="../dist/img/blog/1.jpg" alt="">
                     </div>
                     <ul>
-                        <p><span><i class="fa-solid fa-user"></i></span> Admin</p>
-                        <p><span><i class="fa-solid fa-calendar-day"></i></span> 27/05/2023</p>
-                        <p><span><i class="fa-solid fa-tag"></i></span> Web Dev</p>
+                        <h3><span><i class="fa-solid fa-user"></i></span> Admin</h3>
+                        <h3><span><i class="fa-solid fa-calendar-day"></i></span> 27/05/2023</h3>
+                        <h3><span><i class="fa-solid fa-tag"></i></span> Web Dev</h3>
                     </ul>
                     <div class="card__text">
                         <h3>How To Learn Javascript Easily With
@@ -62,9 +116,9 @@
                         <img src="../dist/img/blog/2.jpg" alt="">
                     </div>
                     <ul>
-                        <p><span><i class="fa-solid fa-user"></i></span> Admin</p>
-                        <p><span><i class="fa-solid fa-calendar-day"></i></span> 27/05/2023</p>
-                        <p><span><i class="fa-solid fa-tag"></i></span> Web Dev</p>
+                        <h3><span><i class="fa-solid fa-user"></i></span> Admin</h3>
+                        <h3><span><i class="fa-solid fa-calendar-day"></i></span> 27/05/2023</h3>
+                        <h3><span><i class="fa-solid fa-tag"></i></span> Web Dev</h3>
                     </ul>
                     <div class="card__text">
                         <h3>Why You Should Learn This New
@@ -83,9 +137,9 @@
                         <img src="../dist/img/blog/3.jpg" alt="">
                     </div>
                     <ul>
-                        <p><span><i class="fa-solid fa-user"></i></span> Admin</p>
-                        <p><span><i class="fa-solid fa-calendar-day"></i></span> 27/05/2023</p>
-                        <p><span><i class="fa-solid fa-tag"></i></span> Web Dev</p>
+                        <h3><span><i class="fa-solid fa-user"></i></span> Admin</h3>
+                        <h3><span><i class="fa-solid fa-calendar-day"></i></span> 27/05/2023</h3>
+                        <h3><span><i class="fa-solid fa-tag"></i></span> Web Dev</h3>
                     </ul>
                     <div class="card__text">
                         <h3>What Is Digital Marketing And Why Is
@@ -104,9 +158,9 @@
                         <img src="../dist/img/blog/1.jpg" alt="">
                     </div>
                     <ul>
-                        <p><span><i class="fa-solid fa-user"></i></span> Admin</p>
-                        <p><span><i class="fa-solid fa-calendar-day"></i></span> 27/05/2023</p>
-                        <p><span><i class="fa-solid fa-tag"></i></span> Web Dev</p>
+                        <h3><span><i class="fa-solid fa-user"></i></span> Admin</h3>
+                        <h3><span><i class="fa-solid fa-calendar-day"></i></span> 27/05/2023</h3>
+                        <h3><span><i class="fa-solid fa-tag"></i></span> Web Dev</h3>
                     </ul>
                     <div class="card__text">
                         <h3>How To Learn Javascript Easily With
@@ -125,9 +179,9 @@
                         <img src="../dist/img/blog/3.jpg" alt="">
                     </div>
                     <ul>
-                        <p><span><i class="fa-solid fa-user"></i></span> Admin</p>
-                        <p><span><i class="fa-solid fa-calendar-day"></i></span> 27/05/2023</p>
-                        <p><span><i class="fa-solid fa-tag"></i></span> Web Dev</p>
+                        <h3><span><i class="fa-solid fa-user"></i></span> Admin</h3>
+                        <h3><span><i class="fa-solid fa-calendar-day"></i></span> 27/05/2023</h3>
+                        <h3><span><i class="fa-solid fa-tag"></i></span> Web Dev</h3>
                     </ul>
                     <div class="card__text">
                         <h3>What Is Digital Marketing And Why Is
@@ -146,9 +200,9 @@
                         <img src="../dist/img/blog/2.jpg" alt="">
                     </div>
                     <ul>
-                        <p><span><i class="fa-solid fa-user"></i></span> Admin</p>
-                        <p><span><i class="fa-solid fa-calendar-day"></i></span> 27/05/2023</p>
-                        <p><span><i class="fa-solid fa-tag"></i></span> Web Dev</p>
+                        <h3><span><i class="fa-solid fa-user"></i></span> Admin</h3>
+                        <h3><span><i class="fa-solid fa-calendar-day"></i></span> 27/05/2023</h3>
+                        <h3><span><i class="fa-solid fa-tag"></i></span> Web Dev</h3>
                     </ul>
                     <div class="card__text">
                         <h3>Why You Should Learn This New
@@ -171,11 +225,66 @@
             </ul>
     </section>
 
+    <!-- Faq -->
+    <section class="faq">
+        <div class="container">
+          <div class="faq__title">
+            <h4>FAQ</h4>
+            <h2>Frequently Asked Questions</h2>
+            <p>As A Matter Of Fact The Unification Of The Coherent Software Provides A Strict Control Over The Accomplishment Of Intended Estimation</p>
+          </div>
+          <div class="faq__wrapper">
+            <div class="faq__image">
+              <img src="./img/services/customer.png" alt="">
+            </div>
+            <div class="faq__question">
+              <!-- question 1 -->
+              <div class="faq__cards">
+                <div class="question">
+                  <h5>Do You Offer Both On-Site And Remote IT Support?<i class="fa-solid fa-chevron-down"></i></h5>  
+                  <div class="contents">
+                    <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Ipsum Ullam Earum Itaque, Quas Labore Illo Eligendi Iure Asperiores, Modi Veniam Molestiae Vero Quasi. Ex, Alias Modi Voluptates Aspernatur Consequuntur Facere?</p> 
+                  </div> 
+                </div>
+              </div>
+              <!-- question 2 -->
+              <div class="faq__cards">
+                <div class="question">
+                  <h5>What Is Techida ?<i class="fa-solid fa-chevron-down"></i></h5>  
+                  <div class="contents">
+                    <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Ipsum Ullam Earum Itaque, Quas Labore Illo Eligendi Iure Asperiores, Modi Veniam Molestiae Vero Quasi. Ex, Alias Modi Voluptates Aspernatur Consequuntur Facere?</p> 
+                  </div> 
+                </div>
+              </div>
+              <!-- question 3 -->
+              <div class="faq__cards">
+                <div class="question">
+                  <h5>Is There Any Updates In The Future ?<i class="fa-solid fa-chevron-down"></i></h5>  
+                  <div class="contents">
+                    <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Ipsum Ullam Earum Itaque, Quas Labore Illo Eligendi Iure Asperiores, Modi Veniam Molestiae Vero Quasi. Ex, Alias Modi Voluptates Aspernatur Consequuntur Facere?</p> 
+                  </div> 
+                </div>
+              </div>
+              <!-- question 4 -->
+              <div class="faq__cards">
+                <div class="question">
+                  <h5>How Much For The Service?<i class="fa-solid fa-chevron-down"></i></h5>  
+                  <div class="contents">
+                    <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Ipsum Ullam Earum Itaque, Quas Labore Illo Eligendi Iure Asperiores, Modi Veniam Molestiae Vero Quasi. Ex, Alias Modi Voluptates Aspernatur Consequuntur Facere?</p> 
+                  </div> 
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+       </section>
+
     <!-- Contact -->
     <section class="contact">
         <div class="container">
                 <div class="contact__title">
-                    <h4>Contact</h4>
+                    <h4>CONTACT</h4>
                     <h2>Contact Us For Any Questions</h2>
                     <p>As A Matter Of Fact The Unification Of The Coherent Software
                          Provides A Strict Control Over The Accomplishment Of Intended
@@ -206,17 +315,17 @@
                 <div class="contact__form">
                     <ul>
                         <li>
-                            <input type="text" placeholder="name">
+                            <input type="text" placeholder="Name">
                         </li>
                         <li>
-                            <input type="text" placeholder="subject">
+                            <input type="text" placeholder="Subject">
                         </li>
                     </ul>
                     <ul>
-                        <input type="text" placeholder="email">
+                        <input type="text" placeholder="Email">
                     </ul>
                     <ul>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                     </ul>
                     <div class="contact__btn">
                         <a class="btn bg--vera" href="">Send Now</a>
@@ -229,8 +338,238 @@
     <!-- Map -->
     <section class="map">
         <div class="container">
-            <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9050207912896!2d-0.14675028449633118!3d51.514958479636384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad554c335c1%3A0xda2164b934c67c1a!2sOxford+St%2C+London%2C+UK!5e0!3m2!1sen!2sro!4v1485889312335" allowfullscreen=""></iframe>
+            <div class="map__wrapper">
+                <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9050207912896!2d-0.14675028449633118!3d51.514958479636384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad554c335c1%3A0xda2164b934c67c1a!2sOxford+St%2C+London%2C+UK!5e0!3m2!1sen!2sro!4v1485889312335" allowfullscreen=""></iframe>
+            </div>
         </div>
     </section>
+
+    <!-- Pricing starts -->
+    <section class="pricing">
+        <div class="container">
+            <div class="pricing__wrapper">
+                <div class="pricing__title">
+                    <h4>PRICING</h4>
+                    <h2>Our Pricing</h2>
+                    <p>As A Matter Of Fact The Unification Of The Coherent Software Provides A Strict Control Over The Accomplishment Of Intended Estimation</p>
+                </div>
+                <div class="pcard__wrapper">
+                    <!-- card 1 -->
+                    <div class="pcard">
+                        <div class="pcard__top">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <h3>Free</h3>
+                            <h2>00$</h2>
+                            <p>Per Project</p>
+                        </div>
+                        <ul>
+                            <li><i class="fa-regular fa-circle-check"></i> Single User</li>
+                            <li><i class="fa-regular fa-circle-check"></i> No Updates</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Limited Acces Library</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Lorem Ipsum</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Dolor Sit Amet</li>
+                        </ul>
+                        <div class="pcard__btn">
+                            <a class="btn bg--vera" href="">Start Now</a>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="pcard">
+                        <div class="pcard__top">
+                            <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                            <h3>Basic</h3>
+                            <h2>19$</h2>
+                            <p>Per Project</p>
+                        </div>
+                        <ul>
+                            <li><i class="fa-regular fa-circle-check"></i> Single User</li>
+                            <li><i class="fa-regular fa-circle-check"></i> No Updates</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Limited Acces Library</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Lorem Ipsum</li>
+                            <li><i class="fa-regular fa-circle-xmark"></i> Dolor Sit Amet</li>
+                        </ul>
+                        <div class="pcard__btn">
+                            <a class="btn bg--vera" href="">Start Now</a>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="pcard">
+                        <div class="pcard__top">
+                            <i class="fa-solid fa-money-bill"></i>
+                            <h3>Standard</h3>
+                            <h2>39$</h2>
+                            <p>Per Project</p>
+                        </div>
+                        <ul>
+                            <li><i class="fa-regular fa-circle-check"></i> Single User</li>
+                            <li><i class="fa-regular fa-circle-check"></i> No Updates</li>
+                            <li><i class="fa-regular fa-circle-check"></i> Limited Acces Library</li>
+                            <li><i class="fa-regular fa-circle-xmark"></i> Lorem Ipsum</li>
+                            <li><i class="fa-regular fa-circle-xmark"></i> Dolor Sit Amet</li>
+                        </ul>
+                        <div class="pcard__btn">
+                            <a class="btn bg--vera-w" href="">Start Now</a>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="pcard">
+                        <div class="pcard__top">
+                            <i class="fa-regular fa-money-bill-1"></i>
+                            <h3>Pro</h3>
+                            <h2>99$</h2>
+                            <p>Per Project</p>
+                        </div>
+                        <ul>
+                            <li><i class="fa-regular fa-circle-check"></i> Single User</li>
+                            <li><i class="fa-regular fa-circle-check"></i> No Updates</li>
+                            <li><i class="fa-regular fa-circle-xmark"></i> Limited Acces Library</li>
+                            <li><i class="fa-regular fa-circle-xmark"></i> Lorem Ipsum</li>
+                            <li><i class="fa-regular fa-circle-xmark"></i> Dolor Sit Amet</li>
+                        </ul>
+                        <div class="pcard__btn">
+                            <a class="btn bg--vera" href="">Start Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing ends -->
+
+    <!-- Team starts -->
+    <section class="team">
+        <div class="container">
+            <div class="team__wrapper">
+                <div class="team__title">
+                    <h4>TEAM</h4>
+                    <h2>Our Team</h2>
+                    <p>As A Matter Of Fact The Unification Of The Coherent Software Provides A Strict Control Over The Accomplishment Of Intended Estimation</p>
+                </div>
+                <div class="tcard__wrapper">
+                    <!-- card 1 -->
+                    <div class="tcard">
+                        <div>
+                            <img src="../dist/img/home/team-1.jpg" alt="">
+                        </div>
+                        <div class="tcard__text">
+                            <h3>Bodih Dgmas</h3>
+                            <p>Front-End Developer</p>
+                        </div>
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>       
+                        </ul>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="tcard">
+                        <div>
+                            <img src="../dist/img/home/team-2.jpg" alt="">
+                        </div>
+                        <div class="tcard__text">
+                            <h3>Ahmad Errami</h3>
+                            <p>Back-End Developer</p>
+                        </div>
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>       
+                        </ul>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="tcard">
+                        <div>
+                            <img src="../dist/img/home/team-3.jpg" alt="">
+                        </div>
+                        <div class="tcard__text">
+                            <h3>John Smith</h3>
+                            <p>Web Designer</p>
+                        </div>
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>       
+                        </ul>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="tcard">
+                        <div>
+                            <img src="../dist/img/home/team-4.jpg" alt="">
+                        </div>
+                        <div class="tcard__text">
+                            <h3>Satoshi Nakamoto</h3>
+                            <p>CEO Founder</p>
+                        </div>
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>       
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team ends -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="socials">
+              <img src="./img/services/logo.png" alt="">
+              <p>Lorem Ipsum Dolor Sit Amet Aspernatur Exercitationem Fugiat.</p>
+              <h6>Follow Us</h6>
+              <div class="media">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram text-[1.1rem]"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+            </div>
+            <div class="site">
+              <h6>Site Map</h6>
+              <ul class="sitemap">
+                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Home</a></li>
+                <li><a href=""><i class="fa-solid fa-chevron-right"></i>About</a></li>
+                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Services</a></li>
+                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Contact</a></li>
+              </ul>
+            </div>
+            <div class="follow">
+              <h6>Follow Us</h6>
+              <ul class="socialMedia">
+                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Facebook</a></li>
+                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Instagram</a></li>
+                <li><a href=""><i class="fa-solid fa-chevron-right"></i>LinkedIn</a></li>
+                <li><a href=""><i class="fa-solid fa-chevron-right"></i>X</a></li>
+              </ul>
+            </div>
+            <div class="services">
+              <h6>Our Services</h6>
+              <ul class="listServices">
+                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Digital Marketing</a></li>
+                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Web Development</a></li>
+                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Cyber Security</a></li>
+                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Graphic Design</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="bottomFooter">
+            <p>&copy; 2024 Created By: <a href="">Erramix</a></p>
+            <div class="terms">
+              <a href="">Terms Of Use</a>
+              <a href="">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+        
+       </footer>
+
+       <script src="./js/script.js"></script>
 </body>
 </html>
