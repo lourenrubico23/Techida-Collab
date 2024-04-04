@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./dist/**/*.{html,js}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -14,6 +15,7 @@ module.exports = {
         vdark: "#212121",
         footertxt: "#b5b5b5",
         bgfooter: "#1b1c1b",
+        darkmode: "#151515",
       },
         fontFamily: {
           outfitbold: ["OutfitBold", "sans-serif"],
