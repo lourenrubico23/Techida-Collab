@@ -1623,11 +1623,6 @@ a {
   background-color: rgb(247 245 242 / var(--tw-bg-opacity));
 }
 
-.bg-red-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
-}
-
 .pb-1 {
   padding-bottom: 0.25rem;
 }
