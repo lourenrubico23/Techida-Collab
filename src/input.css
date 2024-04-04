@@ -163,7 +163,7 @@
 
 /* ---------------------------------BLOG PAGE---------------------- */
     .blog{
-      @apply bg-primary pb-[2rem] pt-[2rem];
+      @apply py-[2rem];
     }
     .blog__title p{
       @apply pb-[2rem] lg:max-w-[50rem];
@@ -175,19 +175,19 @@
       @apply lg:text-[2.7rem];
     }
     .blog__card{
-      @apply bg-lgrey pb-[1.5rem] lg:w-[25rem] md:w-[20rem] md:mb-[1rem];
+      @apply bg-lgrey pb-[1.5rem] lg:w-full md:w-full md:mb-[1rem];
     }
     .blog__card img{
-      @apply rounded-md lg:w-full md:w-[20rem];
+      @apply rounded-md w-full md:w-full;
     }
-    .blog__card ul p{
-      @apply font-outfitsemibold text-[1rem];
+    .blog__card ul h3{
+      @apply font-normal text-[.9rem] text-[#6a6a6a] lg:text-[1rem];
     }
     .blog__card ul span{
       @apply pr-[.5rem] text-secondary;
     }
     .blog__card ul{
-      @apply flex flex-row gap-14 py-[1rem] justify-center lg:gap-10 md:gap-3;
+      @apply flex flex-row gap-10 py-[1.1rem] justify-center lg:gap-10 md:gap-6;
     }
     .blog__card .card__text{
       @apply px-[1.1rem];
@@ -196,7 +196,7 @@
       @apply text-secondary font-bold;
     }
     .card__text h3{
-      @apply text-[1.4rem] font-bold leading-10 text-vdark pb-[1rem];
+      @apply text-[1.4rem] font-bold leading-10 text-crdtitle pb-[1rem] px-[0rem];
     }
     .card__text p{
       @apply leading-8 pb-[1rem];
@@ -205,7 +205,7 @@
       @apply px-[1.1rem];
     }
     .card__wrapper{
-      @apply grid grid-cols-1 gap-[1.5rem] lg:grid lg:grid-cols-3 lg:gap-[1.3rem] md:grid md:grid-cols-2 md:gap-[.1rem];
+      @apply grid grid-cols-1 gap-[1.5rem] lg:grid lg:grid-cols-3 lg:gap-[1.3rem] md:grid md:grid-cols-2 md:gap-[1rem];
     }
     .blog__btn{
       @apply flex flex-row gap-3 justify-center;
@@ -219,10 +219,10 @@
 
     /* -----------CONTACT----------- */
     .contact{
-      @apply bg-primary pb-[2rem] pt-[2rem];
+      @apply py-[2rem];
     }
     .contact__title p{
-      @apply pb-[2rem];
+      @apply pb-[2rem] lg:max-w-[40rem] lg:text-[.9rem] md:text-[1rem];
     }
     .contact__left h3{
       @apply pb-[1rem] font-bold lg:text-[1.5rem];
@@ -240,19 +240,19 @@
       @apply py-[1rem]
     }
     .contact__form ul li input{
-      @apply bg-lgrey w-[28rem] pl-[1rem] py-[1rem] mb-[1rem] lg:w-[20rem];
+      @apply bg-lgrey pl-[1rem] py-[1rem] mb-[1rem] w-full outline-none;
     }
     .contact__form ul li input::placeholder{
       @apply text-[1rem] text-[#747778] font-semibold;
     }
     .contact__form ul input{
-      @apply bg-lgrey w-[28rem] pl-[1rem] py-[1rem] mb-[1rem] lg:w-[41rem];
+      @apply bg-lgrey pl-[1rem] py-[1rem] mb-[1rem] w-full outline-none;
     }
     .contact__form ul input::placeholder{
       @apply text-[1rem] text-[#747778] font-semibold;
     }
     .contact__form ul textarea{
-      @apply bg-lgrey w-[28rem] pl-[1rem] py-[1rem] mb-[1rem] lg:w-[41rem];
+      @apply bg-lgrey pl-[1rem] py-[1rem] mb-[1rem] w-full outline-none;
     }
     .contact__form ul textarea::placeholder{
       @apply text-[#747778] font-semibold;
@@ -261,17 +261,127 @@
       @apply grid grid-cols-1 lg:grid lg:grid-cols-2;
     }
     .contact__form ul:first-child{
-      @apply grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-[3.5rem];
+      @apply grid grid-cols-1 lg:grid lg:grid-cols-2 lg:gap-[1rem];
     }
-
-
 
     /* -----------MAP----------- */
     .map{
-      @apply bg-primary pb-[2rem] pt-[2rem];
+      @apply py-[2rem];
     }
+    /* .map__wrapper{
+      @apply w-[23.5rem] lg:w-[80rem] md:w-[45rem];
+    } */
     .map iframe{
-      @apply w-[28rem] h-[25rem] lg:w-[80rem];
+      @apply h-[25rem] w-full;
+    }
+
+    /* -----------PRICING-HOME PAGE---------- */
+    .pricing{
+      @apply py-[2rem];
+    }
+    .pricing__title p{
+      @apply pb-[2rem] lg:max-w-[40rem] lg:text-[.9rem] md:text-[1rem];
+    }
+    .pcard{
+      @apply bg-lgrey py-[2.5rem] w-full;
+    }
+    .pcard__top{
+      @apply text-center;
+    }
+    .pcard__top i{
+      @apply text-clricon text-[3rem];
+    }
+    .pcard__top h3{
+      @apply py-[.5rem] text-crdtitle;
+    }
+    .pcard__top h2{
+      @apply text-[3.5rem] text-secondary;
+    }
+    .pcard__top p{
+      @apply font-bold text-[1.1rem] pb-[1.5rem];
+    }
+    .pcard ul{
+      @apply mb-[3rem] text-center;
+    }
+    .pcard ul li{
+      @apply text-[1.2rem] pb-[.5rem] text-clricon;
+    }
+    .pcard ul li i{
+      @apply text-secondary;
+    }
+    .pcard__btn{
+      @apply text-center;
+    }
+    .pcard__wrapper{
+      @apply grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-4;
+    }
+    .pcard:nth-child(3){
+      @apply bg-secondary;
+    }
+    .pcard:nth-child(3) .pcard__top i{
+      @apply text-[#d8d8d8];
+    }
+    .pcard:nth-child(3) .pcard__top h2{
+      @apply text-primary;
+    }
+    .pcard:nth-child(3) .pcard__top p{
+      @apply text-[#d8d8d8];
+    }
+    .pcard:nth-child(3) ul li{
+      @apply text-[#d8d8d8];
+    }
+    .pcard:nth-child(3) ul li i{
+      @apply text-[#212729];
+    }
+    .pcard:nth-child(3) ul li:nth-child(4) i{
+      @apply text-[#874c45];
+    }
+    .pcard:nth-child(3) ul li:nth-child(5) i{
+      @apply text-[#874c45];
+    }
+    .pcard:nth-child(2) ul li:nth-child(5) i{
+      @apply text-[#874c45];
+    }
+    .pcard:nth-child(4) ul li:nth-child(3) i{
+      @apply text-[#874c45];
+    }
+    .pcard:nth-child(4) ul li:nth-child(4) i{
+      @apply text-[#874c45];
+    }
+    .pcard:nth-child(4) ul li:nth-child(5) i{
+      @apply text-[#874c45];
+    }
+
+    /* -----------TEAM-HOME PAGE---------- */
+    .team{
+      @apply py-[2rem];
+    }
+    .team__title p{
+      @apply pb-[2rem] lg:max-w-[40rem] lg:text-[.9rem] md:text-[1rem];
+    }
+    .tcard{
+      @apply bg-lgrey pb-[1rem];
+    }
+    .tcard img{
+      @apply w-full;
+    }
+    .tcard__text h3{
+      @apply py-[.5rem] text-[1.3rem] text-crdtitle;
+    }
+    .tcard__text p{
+      @apply pb-[.5rem] text-[1rem] font-bold text-clricon;
+    }
+    .tcard ul{
+      @apply flex gap-4 justify-center;
+    }
+    .tcard ul li a{
+      @apply text-[1.7rem] text-clricon hover:text-secondary;
+    }
+    .tcard__text{
+      @apply text-center;
+    }
+    .tcard__wrapper{
+      @apply grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-4;
     }
 
     
@@ -458,20 +568,34 @@
   @layer utilities{
     /* ------------------BUTTONS---------------- */
     .btn{
-      @apply inline-block py-[.6rem] px-[1.3rem] rounded-full border-transparent border-[1.5px]
+      @apply inline-block py-[.7rem] px-[1.3rem] rounded-full border-transparent border-[1.5px]
       text-[1.1rem] font-bold cursor-pointer relative z-[1] overflow-hidden;
     }
     .btn.bg--vera{
       @apply bg-secondary text-primary;
     }
     .btn.bg--vera:hover{
-      @apply text-vdark;
+      @apply text-clrtitle;
     }
     .btn.bg--vera::after{
       @apply content-[""] bg-lgrey absolute z-[-1] left-[-20%] right-[-20%] top-0 bottom-0 
-      skew-x-[-45deg] scale-x-[0] scale-y-[1] transition-all duration-700 border-secondary;
+      skew-x-[-45deg] scale-x-[0] scale-y-[1] transition-all duration-700;
     }
     .btn.bg--vera:hover::after{
+      @apply skew-x-[-45deg] scale-x-[1] scale-y-[1] transition-all duration-500;
+    }
+
+    .btn.bg--vera-w{
+      @apply bg-primary text-secondary;
+    }
+    .btn.bg--vera-w:hover{
+      @apply text-secondary;
+    }
+    .btn.bg--vera-w::after{
+      @apply content-[""] bg-lgrey absolute z-[-1] left-[-20%] right-[-20%] top-0 bottom-0 
+      skew-x-[-45deg] scale-x-[0] scale-y-[1] transition-all duration-700;
+    }
+    .btn.bg--vera-w:hover::after{
       @apply skew-x-[-45deg] scale-x-[1] scale-y-[1] transition-all duration-500;
     }
 
