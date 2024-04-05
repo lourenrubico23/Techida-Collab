@@ -57,7 +57,7 @@
 }
 
 .aboutUs__services__card{
-  @apply bg-lgrey mb-3 lg:mb-0 pl-[1rem] py-[1rem] rounded-md relative z-[1] 
+  @apply dark:bg-vdark mb-3 lg:mb-0 pl-[1rem] py-[1rem] rounded-md relative z-[1] 
   flex flex-row items-center gap-4
 }
 .aboutUs__services__card::before{
@@ -69,22 +69,22 @@
 }
 .aboutUs__services__card:hover a, .aboutUs__services__card:hover h3, .aboutUs__services__card:hover p, 
 .aboutUs__services__card:hover i{
-  @apply text-white
+  @apply text-primary dark:text-primary
 }
 .aboutUs__services__card .icon{
   @apply text-[1.8rem] text-secondary pt-3 pb-3
 }
 .aboutUs__services__card p{
-  @apply text-bgfooter pt-[1rem] lg:pt-0 font-extrabold
+  @apply text-bgfooter dark:text-primary md:pt-[1rem] lg:pt-0 font-extrabold
 }
 
 .aboutUs__progress
 {
-  @apply text-vdark flex flex-col text-left
+  @apply text-vdark dark:bg-darkmode flex flex-col text-left
 }
 .progress__container
 {
-  @apply relative max-w-[500px] w-[100%] bg-white my-0
+  @apply relative max-w-[500px] md:max-w-[100rem] w-[100%] bg-primary dark:bg-darkmode my-0
   py-[10px] pr-[20px] rounded-sm
 }
 .progress__container .aboutUs__progress
@@ -93,7 +93,7 @@
 }
 .aboutUs__progress .aboutUs__progress__title
 {
-  @apply block text-[20px] font-bold text-vdark
+  @apply block text-[20px] font-bold text-vdark dark:text-primary
 }
 .aboutUs__progress .aboutUs__skill__bar
 {
@@ -126,7 +126,7 @@
 }
 .choose__card .choose__card__item
 {
-  @apply bg-primary px-[1rem] py-[2rem] mb-6 rounded-md
+  @apply bg-lgrey px-[1rem] py-[2rem] mb-6 rounded-md
 }
 .choose__card .choose__card__item:first-child
 {
@@ -163,12 +163,13 @@
 }
 .portfolio__images .portfolio__images__card
 {
-  @apply grow basis-[300px]
+  @apply grow basis-[300px] relative hover:cursor-pointer
 }
 .portfolio__images .portfolio__images__card img
 {
-  @apply w-[100%] h-[100%] object-cover
+  @apply w-[100%] h-[100%] object-cover 
 }
+
 .portfolio__images__card.hide
 {
   @apply hidden
@@ -178,6 +179,46 @@
   @apply text-[1.3rem] md:text-[1.5rem] font-bold
 }
 
+.portfolio__images__intro
+{
+  @apply absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black overflow-hidden
+  w-[100%] h-0 transition-all opacity-0 pl-[1rem]
+
+}
+.portfolio__images__intro h5
+{
+  @apply pt-[10rem] lg:pt-[14rem]
+}
+.portfolio__images__card:hover .portfolio__images__intro
+{
+  @apply h-[100%] opacity-100
+}
+
+
+.portfolio__images__intro h5
+{
+  @apply text-[1.5rem] text-primary my-[.2rem] 
+}
+.portfolio__images__intro p
+{
+  @apply text-primary text-[1rem] font-bold
+}
+.portfolio__images__hashtags
+{
+  @apply flex flex-row gap-4 pb-3
+}
+.portfolio__images__hashtags h4
+{
+  @apply font-bold
+}
+.portfolio__images__view
+{
+  @apply flex flex-row gap-2 items-center justify-center bg-primary p-[.3rem] mx-[3rem]
+}
+.portfolio__images__view i
+{
+  @apply text-vdark text-[1rem] font-bold
+}
 /* counter */
 .counter
 {
@@ -226,7 +267,7 @@
 /* logo slider */
 .logo__slider
 {
-  @apply bg-primary lg:my-[2rem]
+  @apply bg-lgrey lg:my-[2rem]
 }
 .logo__slider__wrapper
 {
@@ -245,7 +286,7 @@
 } */
 .testimonials .testimonials__cards
 {
-  @apply bg-primary py-[1rem] pl-[1rem] pr-[.5rem]
+  @apply bg-lgrey dark:bg-vdark py-[1rem] pl-[1rem] pr-[.5rem]
 }
 .testimonials .testimonials__cards__profile
 {
@@ -273,7 +314,7 @@
 }
 .testimonials__cards__profile__name
 {
-  @apply text-[1rem] font-bold
+  @apply text-[1rem] font-bold dark:text-primary
 }
 .testimonials__cards__profile
 {
@@ -307,7 +348,7 @@
 }
 .header__action
 {
-  @apply absolute top-0 left-0 w-[0] h-[49vh]
+  @apply absolute top-0 left-0 w-[0] md:h-[49vh] lg:h-[49vh] h-[42vh]  
   px-0 pt-0 overflow-hidden transition-all shadow-md
   bg-primary;
 }
@@ -365,7 +406,7 @@
 }
 .header__action .header__navm li a
 {
-  @apply font-medium text-[1.3rem] text-vdark 
+  @apply font-medium md:text-[1.3rem] lg:text-[1.3rem] text-[1rem]  text-vdark 
   ease-in-out duration-100 delay-150
  opacity-100 hover:py-[.5rem] hover:text-secondary
   hover:delay-300 hover:bg-opacity-25;
@@ -412,6 +453,20 @@
 .header__wrapper
 {
   @apply flex items-center justify-between 
+}
+
+.pages__drpdwn .contents{
+  @apply max-h-[0rem] overflow-hidden transition-all 
+  flex flex-col gap-3 
+}
+.pages__drpdwn .contents.open{
+  @apply max-h-[50rem] transition-all pt-3 bg-primary  
+  border-vdark border-[1px] rounded-md p-[.4rem]
+}
+
+.pages__drpdwn .contents li a 
+{
+  @apply md:text-[1.3rem] lg:text-[1.3rem] text-[1rem]
 }
 /* ---------------------------------HOME PAGE HEADER END---------------------- */
 
@@ -574,7 +629,7 @@
       @apply text-center;
     }
     .pcard__wrapper{
-      @apply grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-4;
+      @apply grid grid-cols-1 overflow-hidden gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-4;
     }
     .pcard:nth-child(3){
       @apply bg-secondary;
@@ -642,7 +697,7 @@
       @apply text-center;
     }
     .tcard__wrapper{
-      @apply grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-4;
+      @apply grid grid-cols-1 overflow-hidden gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-4;
     }
 
     

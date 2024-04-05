@@ -25,6 +25,12 @@ const portfolioFilterImage = e =>{
 portfolioNavs.forEach(button => button.addEventListener("click", portfolioFilterImage));
 
 
+// change on click
+function functionToggle(x) {
+  x.classList.toggle("fa-sun");
+  x.classList.toggle("fa-moon");
+}
+
 
 /* Burger Menu */
 const burgerMenu = document.querySelector(".burger__menu");
@@ -32,6 +38,15 @@ const menu = document.querySelector(".header__action");
 burgerMenu.addEventListener("click", () =>{
     burgerMenu.classList.toggle("open");
     menu.classList.toggle("open");
+});
+
+/* Links / Dropdown */
+const headerlinks = document.querySelectorAll(".pages__drpdwn a");
+headerlinks.forEach((headerlink) => {
+  headerlink.addEventListener("click", () => {
+    headerlink.querySelector("i").classList.toggle("open");
+    headerlink.nextElementSibling.classList.toggle("open");
+  });
 });
 
 /* Links / Dropdown */
