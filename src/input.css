@@ -420,7 +420,7 @@
 
     /* -----------CONTACT----------- */
     .contact{
-      @apply py-[2rem];
+      @apply py-[2rem] overflow-hidden;
     }
     .contact__title p{
       @apply pb-[2rem] lg:max-w-[40rem] lg:text-[.9rem] md:text-[1rem];
@@ -467,7 +467,7 @@
 
     /* -----------MAP----------- */
     .map{
-      @apply py-[2rem];
+      @apply py-[2rem] overflow-hidden;
     }
     /* .map__wrapper{
       @apply w-[23.5rem] lg:w-[80rem] md:w-[45rem];
@@ -592,7 +592,7 @@
   @apply bg-bgfooter text-white py-[2rem]
 }
 .bannernav a{
-  @apply text-white
+  @apply text-white 
 }
 .bannernav a:first-child{
   @apply hover:text-secondary
@@ -603,13 +603,13 @@
   @apply py-[2rem] 
 }
 .services__wrapper{
-  @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-6 
+  @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-6 overflow-hidden
 }
 .services__title{
   @apply lg:w-[50%] pb-4
 }
 .services__card{
-  @apply bg-lgrey mb-6 lg:mb-0 p-[2rem] relative z-[1] dark:bg-vdark
+  @apply bg-lgrey mb-6 lg:mb-0 p-[2rem] relative z-[1] dark:bg-vdark 
 }
 .services__card::before{
   @apply content-[""] absolute top-0 left-0 h-[100%] w-0 bg-secondary z-[-1]
@@ -636,7 +636,7 @@
 
  /* ---------FAQ----------- */
  .faq{
-  @apply py-[2rem] 
+  @apply py-[2rem] overflow-hidden
  }
 .faq__wrapper{
   @apply flex flex-col lg:grid grid-cols-2 gap-3

@@ -1073,6 +1073,7 @@ a {
 /* -----------CONTACT----------- */
 
 .contact {
+  overflow: hidden;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -1230,6 +1231,7 @@ a {
 /* -----------MAP----------- */
 
 .map {
+  overflow: hidden;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -1526,6 +1528,7 @@ a {
 
 .services__wrapper {
   gap: 1.5rem;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -1632,6 +1635,7 @@ a {
 /* ---------FAQ----------- */
 
 .faq {
+  overflow: hidden;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }

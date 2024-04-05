@@ -6,8 +6,6 @@ burgerMenu.addEventListener("click", () =>{
     menu.classList.toggle("open");
 });
 
-
-
 /* Links / Dropdown */
 const links = document.querySelectorAll(".faq__cards h5");
 links.forEach((link) => {
