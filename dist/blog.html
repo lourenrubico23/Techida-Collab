@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../src/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class=" bg-primary">
+<body class=" bg-primary dark:bg-darkmode transition-all ease-out duration-300">
 
     <!-- Header -->
     <header class="header">
@@ -47,12 +47,12 @@
                     </ul>
                     <div class="header__action__btn block lg:hidden">
                         <button class="btn bg--secondary">Join now</button>
-                        <button><i class="fa-solid fa-moon"></i></button>
+                        <button><i id="toggledark" class="fa-solid fa-moon"></i></button>
                     </div>
                 </div>
                 <div class="header__action__btn hidden lg:block">
                     <button class="btn bg--secondary">Join now</button>
-                    <button><i class="fa-solid fa-moon"></i></button>
+                    <button><i id="toggle" class="fa-solid fa-moon"></i></button>
                 </div>
                 <div class="burger__menu">
                     <span></span>
@@ -65,7 +65,7 @@
 
     <!-- Banner -->
     <section class="banner">
-        <div class="container">
+        <div data-aos="fade-up" data-aos-delay="100" class="container">
           <div class="banner__wrapper">
             <div class="bannernav">
               <a href="">HOME</a>
@@ -82,15 +82,15 @@
     <section class="blog">
         <div class="container">
             <div class="blog__title">
-                <h4>BLOG</h4>
-                <h2>Our Blog</h2>
-                <p>As A Matter Of Fact The Unification Of The Coherent Software
+                <h4 data-aos="fade-up">BLOG</h4>
+                <h2 data-aos="fade-up" data-aos-delay="100">Our Blog</h2>
+                <p data-aos="fade-up" data-aos-delay="150">As A Matter Of Fact The Unification Of The Coherent Software
                      Provides A Strict Control Over The Accomplishment Of Intended
                       Estimation</p>
             </div>
             <div class="card__wrapper">
                 <!-- card 1 -->
-                <div class="blog__card">
+                <div data-aos="fade-right" data-aos-delay="250" class="blog__card">
                     <div>
                         <img src="../dist/img/blog/1.jpg" alt="">
                     </div>
@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <!-- card 2 -->
-                <div class="blog__card">
+                <div data-aos="fade-up" data-aos-delay="200" class="blog__card">
                     <div>
                         <img src="../dist/img/blog/2.jpg" alt="">
                     </div>
@@ -132,7 +132,7 @@
                     </div>
                 </div>
                 <!-- card 3 -->
-                <div class="blog__card">
+                <div data-aos="fade-left" data-aos-delay="250" class="blog__card">
                     <div>
                         <img src="../dist/img/blog/3.jpg" alt="">
                     </div>
@@ -153,7 +153,7 @@
                     </div>
                 </div>
                  <!-- card 4 -->
-                 <div class="blog__card">
+                 <div data-aos="fade-right" data-aos-delay="250" class="blog__card">
                     <div>
                         <img src="../dist/img/blog/1.jpg" alt="">
                     </div>
@@ -174,7 +174,7 @@
                     </div>
                 </div>
                 <!-- card 5 -->
-                <div class="blog__card">
+                <div data-aos="fade-up" data-aos-delay="200" class="blog__card">
                     <div>
                         <img src="../dist/img/blog/3.jpg" alt="">
                     </div>
@@ -195,7 +195,7 @@
                     </div>
                 </div>
                 <!-- card 6 -->
-                <div class="blog__card">
+                <div data-aos="fade-left" data-aos-delay="250" class="blog__card">
                     <div>
                         <img src="../dist/img/blog/2.jpg" alt="">
                     </div>
@@ -218,10 +218,10 @@
             </div>
             </div>
             <ul class="blog__btn">
-                <li><a href="">1</a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
-                <li><a href="">4</a></li>
+                <li data-aos="fade-up" data-aos-delay="100"><a href="">1</a></li>
+                <li data-aos="fade-up" data-aos-delay="150"><a href="">2</a></li>
+                <li data-aos="fade-up" data-aos-delay="200"><a href="">3</a></li>
+                <li data-aos="fade-up" data-aos-delay="250"><a href="">4</a></li>
             </ul>
     </section>
 
@@ -229,17 +229,17 @@
     <section class="faq">
         <div class="container">
           <div class="faq__title">
-            <h4>FAQ</h4>
-            <h2>Frequently Asked Questions</h2>
-            <p>As A Matter Of Fact The Unification Of The Coherent Software Provides A Strict Control Over The Accomplishment Of Intended Estimation</p>
+            <h4 data-aos="fade-up">FAQ</h4>
+            <h2 data-aos="fade-up" data-aos-delay="100">Frequently Asked Questions</h2>
+            <p data-aos="fade-up" data-aos-delay="150">As A Matter Of Fact The Unification Of The Coherent Software Provides A Strict Control Over The Accomplishment Of Intended Estimation</p>
           </div>
           <div class="faq__wrapper">
-            <div class="faq__image">
+            <div data-aos="fade-right" data-aos-delay="200" class="faq__image">
               <img src="./img/services/customer.png" alt="">
             </div>
             <div class="faq__question">
               <!-- question 1 -->
-              <div class="faq__cards">
+              <div data-aos="fade-up" data-aos-delay="250" class="faq__cards">
                 <div class="question">
                   <h5>Do You Offer Both On-Site And Remote IT Support?<i class="fa-solid fa-chevron-down"></i></h5>  
                   <div class="contents">
@@ -248,7 +248,7 @@
                 </div>
               </div>
               <!-- question 2 -->
-              <div class="faq__cards">
+              <div data-aos="fade-up" data-aos-delay="300" class="faq__cards">
                 <div class="question">
                   <h5>What Is Techida ?<i class="fa-solid fa-chevron-down"></i></h5>  
                   <div class="contents">
@@ -257,7 +257,7 @@
                 </div>
               </div>
               <!-- question 3 -->
-              <div class="faq__cards">
+              <div data-aos="fade-up" data-aos-delay="350" class="faq__cards">
                 <div class="question">
                   <h5>Is There Any Updates In The Future ?<i class="fa-solid fa-chevron-down"></i></h5>  
                   <div class="contents">
@@ -266,7 +266,7 @@
                 </div>
               </div>
               <!-- question 4 -->
-              <div class="faq__cards">
+              <div data-aos="fade-up" data-aos-delay="400" class="faq__cards">
                 <div class="question">
                   <h5>How Much For The Service?<i class="fa-solid fa-chevron-down"></i></h5>  
                   <div class="contents">
@@ -284,29 +284,29 @@
     <section class="contact">
         <div class="container">
                 <div class="contact__title">
-                    <h4>CONTACT</h4>
-                    <h2>Contact Us For Any Questions</h2>
-                    <p>As A Matter Of Fact The Unification Of The Coherent Software
+                    <h4 data-aos="fade-up">CONTACT</h4>
+                    <h2 data-aos="fade-up" data-aos-delay="100">Contact Us For Any Questions</h2>
+                    <p data-aos="fade-up" data-aos-delay="150">As A Matter Of Fact The Unification Of The Coherent Software
                          Provides A Strict Control Over The Accomplishment Of Intended
                           Estimation</p>
                 </div>
             <div class="contact__wrapper">
                 <div class="contact__left">
-                    <h3>Contact Info :</h3>
+                    <h3 data-aos="fade-right" data-aos-delay="200">Contact Info :</h3>
                     <ul>
-                        <li class="flex gap-6">
+                        <li data-aos="fade-right" data-aos-delay="250" class="flex gap-6">
                             <i class="fa-solid fa-envelope"></i>
                             <p>Example@Example.Com</p>
                         </li>
-                        <li class="flex gap-6">
+                        <li data-aos="fade-up" data-aos-delay="300" class="flex gap-6">
                             <i class="fa-solid fa-mobile-button"></i>
                             <p>+123 456 6789</p>            
                         </li>
-                        <li class="flex gap-6">
+                        <li data-aos="fade-up" data-aos-delay="350" class="flex gap-6">
                             <i class="fa-solid fa-location-dot"></i> 
                             <p>A108 Adam Street, New York, NY 535022</p>                           
                         </li>
-                        <li class="flex gap-6">
+                        <li data-aos="fade-up" data-aos-delay="400" class="flex gap-6">
                             <i class="fa-brands fa-instagram"></i> 
                             <p>Techida-Company</p>
                         </li>
@@ -314,20 +314,20 @@
                 </div>
                 <div class="contact__form">
                     <ul>
-                        <li>
+                        <li data-aos="fade-right" data-aos-delay="200">
                             <input type="text" placeholder="Name">
                         </li>
-                        <li>
+                        <li data-aos="fade-left" data-aos-delay="200">
                             <input type="text" placeholder="Subject">
                         </li>
                     </ul>
-                    <ul>
+                    <ul data-aos="fade-up" data-aos-delay="250">
                         <input type="text" placeholder="Email">
                     </ul>
-                    <ul>
+                    <ul data-aos="fade-up" data-aos-delay="300">
                         <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                     </ul>
-                    <div class="contact__btn">
+                    <div data-aos="fade-up" data-aos-delay="350" class="contact__btn">
                         <a class="btn bg--vera" href="">Send Now</a>
                     </div>
                 </div>
@@ -339,7 +339,7 @@
     <section class="map">
         <div class="container">
             <div class="map__wrapper">
-                <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9050207912896!2d-0.14675028449633118!3d51.514958479636384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad554c335c1%3A0xda2164b934c67c1a!2sOxford+St%2C+London%2C+UK!5e0!3m2!1sen!2sro!4v1485889312335" allowfullscreen=""></iframe>
+                <iframe data-aos="fade-up" data-aos-delay="450" class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.9050207912896!2d-0.14675028449633118!3d51.514958479636384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad554c335c1%3A0xda2164b934c67c1a!2sOxford+St%2C+London%2C+UK!5e0!3m2!1sen!2sro!4v1485889312335" allowfullscreen=""></iframe>
             </div>
         </div>
     </section>
@@ -349,13 +349,13 @@
         <div class="container">
             <div class="pricing__wrapper">
                 <div class="pricing__title">
-                    <h4>PRICING</h4>
-                    <h2>Our Pricing</h2>
-                    <p>As A Matter Of Fact The Unification Of The Coherent Software Provides A Strict Control Over The Accomplishment Of Intended Estimation</p>
+                    <h4 data-aos="fade-up">PRICING</h4>
+                    <h2 data-aos="fade-up" data-aos-delay="100">Our Pricing</h2>
+                    <p data-aos="fade-up" data-aos-delay="150">As A Matter Of Fact The Unification Of The Coherent Software Provides A Strict Control Over The Accomplishment Of Intended Estimation</p>
                 </div>
                 <div class="pcard__wrapper">
                     <!-- card 1 -->
-                    <div class="pcard">
+                    <div data-aos="fade-up" data-aos-delay="200" class="pcard">
                         <div class="pcard__top">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <h3>Free</h3>
@@ -374,7 +374,7 @@
                         </div>
                     </div>
                     <!-- card 2 -->
-                    <div class="pcard">
+                    <div data-aos="fade-up" data-aos-delay="250" class="pcard">
                         <div class="pcard__top">
                             <i class="fa-solid fa-circle-dollar-to-slot"></i>
                             <h3>Basic</h3>
@@ -393,7 +393,7 @@
                         </div>
                     </div>
                     <!-- card 3 -->
-                    <div class="pcard">
+                    <div data-aos="fade-up" data-aos-delay="300" class="pcard">
                         <div class="pcard__top">
                             <i class="fa-solid fa-money-bill"></i>
                             <h3>Standard</h3>
@@ -412,7 +412,7 @@
                         </div>
                     </div>
                     <!-- card 4 -->
-                    <div class="pcard">
+                    <div data-aos="fade-up" data-aos-delay="350" class="pcard">
                         <div class="pcard__top">
                             <i class="fa-regular fa-money-bill-1"></i>
                             <h3>Pro</h3>
@@ -441,13 +441,13 @@
         <div class="container">
             <div class="team__wrapper">
                 <div class="team__title">
-                    <h4>TEAM</h4>
-                    <h2>Our Team</h2>
-                    <p>As A Matter Of Fact The Unification Of The Coherent Software Provides A Strict Control Over The Accomplishment Of Intended Estimation</p>
+                    <h4 data-aos="fade-up">TEAM</h4>
+                    <h2 data-aos="fade-up" data-aos-delay="100">Our Team</h2>
+                    <p data-aos="fade-up" data-aos-delay="150">As A Matter Of Fact The Unification Of The Coherent Software Provides A Strict Control Over The Accomplishment Of Intended Estimation</p>
                 </div>
                 <div class="tcard__wrapper">
                     <!-- card 1 -->
-                    <div class="tcard">
+                    <div data-aos="fade-right" data-aos-delay="200" class="tcard">
                         <div>
                             <img src="../dist/img/home/team-1.jpg" alt="">
                         </div>
@@ -463,7 +463,7 @@
                         </ul>
                     </div>
                     <!-- card 2 -->
-                    <div class="tcard">
+                    <div data-aos="fade-up" data-aos-delay="250" class="tcard">
                         <div>
                             <img src="../dist/img/home/team-2.jpg" alt="">
                         </div>
@@ -479,7 +479,7 @@
                         </ul>
                     </div>
                     <!-- card 3 -->
-                    <div class="tcard">
+                    <div data-aos="fade-down" data-aos-delay="300" class="tcard">
                         <div>
                             <img src="../dist/img/home/team-3.jpg" alt="">
                         </div>
@@ -495,7 +495,7 @@
                         </ul>
                     </div>
                     <!-- card 4 -->
-                    <div class="tcard">
+                    <div data-aos="fade-left" data-aos-delay="200" class="tcard">
                         <div>
                             <img src="../dist/img/home/team-4.jpg" alt="">
                         </div>
@@ -516,60 +516,66 @@
     </section>
     <!-- Team ends -->
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-          <div class="footer__wrapper">
-            <div class="socials">
-              <img src="./img/services/logo.png" alt="">
-              <p>Lorem Ipsum Dolor Sit Amet Aspernatur Exercitationem Fugiat.</p>
-              <h6>Follow Us</h6>
-              <div class="media">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram text-[1.1rem]"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
-              </div>
-            </div>
-            <div class="site">
-              <h6>Site Map</h6>
-              <ul class="sitemap">
-                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Home</a></li>
-                <li><a href=""><i class="fa-solid fa-chevron-right"></i>About</a></li>
-                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Services</a></li>
-                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Contact</a></li>
-              </ul>
-            </div>
-            <div class="follow">
-              <h6>Follow Us</h6>
-              <ul class="socialMedia">
-                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Facebook</a></li>
-                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Instagram</a></li>
-                <li><a href=""><i class="fa-solid fa-chevron-right"></i>LinkedIn</a></li>
-                <li><a href=""><i class="fa-solid fa-chevron-right"></i>X</a></li>
-              </ul>
-            </div>
-            <div class="services">
-              <h6>Our Services</h6>
-              <ul class="listServices">
-                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Digital Marketing</a></li>
-                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Web Development</a></li>
-                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Cyber Security</a></li>
-                <li><a href=""><i class="fa-solid fa-chevron-right"></i>Graphic Design</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="bottomFooter">
-            <p>&copy; 2024 Created By: <a href="">Erramix</a></p>
-            <div class="terms">
-              <a href="">Terms Of Use</a>
-              <a href="">Privacy Policy</a>
-            </div>
+    <!-- FOOTER STARTS -->
+   <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="socials">
+          <img src="./img/services/logo.png" alt="">
+          <p>Lorem Ipsum Dolor Sit Amet Aspernatur Exercitationem Fugiat.</p>
+          <h6>Follow Us</h6>
+          <div class="media">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram text-[1.1rem]"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
           </div>
         </div>
-        
-       </footer>
+        <div class="site">
+          <h6>Site Map</h6>
+          <ul class="sitemap">
+            <li><a href=""><i class="fa-solid fa-chevron-right"></i>Home</a></li>
+            <li><a href=""><i class="fa-solid fa-chevron-right"></i>About</a></li>
+            <li><a href=""><i class="fa-solid fa-chevron-right"></i>Services</a></li>
+            <li><a href=""><i class="fa-solid fa-chevron-right"></i>Contact</a></li>
+          </ul>
+        </div>
+        <div class="follow">
+          <h6>Follow Us</h6>
+          <ul class="socialMedia">
+            <li><a href=""><i class="fa-solid fa-chevron-right"></i>Facebook</a></li>
+            <li><a href=""><i class="fa-solid fa-chevron-right"></i>Instagram</a></li>
+            <li><a href=""><i class="fa-solid fa-chevron-right"></i>LinkedIn</a></li>
+            <li><a href=""><i class="fa-solid fa-chevron-right"></i>X</a></li>
+          </ul>
+        </div>
+        <div class="services">
+          <h6>Our Services</h6>
+          <ul class="listServices">
+            <li><a href=""><i class="fa-solid fa-chevron-right"></i>Digital Marketing</a></li>
+            <li><a href=""><i class="fa-solid fa-chevron-right"></i>Web Development</a></li>
+            <li><a href=""><i class="fa-solid fa-chevron-right"></i>Cyber Security</a></li>
+            <li><a href=""><i class="fa-solid fa-chevron-right"></i>Graphic Design</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+    <div class="bottomFooter">
+        <p>&copy; 2024 Created By: <a href="">Erramix</a></p>
+        <div class="terms">
+          <a href="">Terms Of Use</a>
+          <a href="">Privacy Policy</a>
+        </div>
+      </div>
+   </footer>
+   <!-- FOOTER ENDS -->
 
        <script src="./js/script.js"></script>
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+       <script>
+        AOS.init();
+      </script>
 </body>
 </html>
