@@ -2247,7 +2247,6 @@ body h1:is(.dark *), h2:is(.dark *) {
 }
 
 .btn.bg--vera {
-  border-width: 1px;
   --tw-bg-opacity: 1;
   background-color: rgb(30 168 79 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -2255,6 +2254,9 @@ body h1:is(.dark *), h2:is(.dark *) {
 }
 
 .btn.bg--vera:is(.dark *) {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(30 168 79 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgb(33 33 33 / var(--tw-text-opacity));
 }
@@ -3031,6 +3033,11 @@ body h1:is(.dark *), h2:is(.dark *) {
 .logo__slider {
   --tw-bg-opacity: 1;
   background-color: rgb(240 240 240 / var(--tw-bg-opacity));
+}
+
+.logo__slider:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 33 33 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 1024px) {
