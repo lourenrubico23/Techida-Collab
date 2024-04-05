@@ -1616,7 +1616,6 @@ a {
 .services__card h3:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(248 246 244 / var(--tw-text-opacity));
-  
 }
 
 .services__card a {
