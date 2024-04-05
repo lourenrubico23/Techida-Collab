@@ -376,13 +376,14 @@
       @apply lg:text-[2.7rem];
     }
     .blog__card{
-      @apply bg-lgrey pb-[1.5rem] lg:w-full md:w-full md:mb-[1rem];
+      @apply bg-lgrey dark:bg-vdark mb-6 rounded-md border-none border-transparent w-full pb-[1.5rem] 
+      lg:w-full lg:rounded-md md:w-full md:mb-[1rem];
     }
     .blog__card img{
       @apply rounded-md w-full md:w-full;
     }
     .blog__card ul h3{
-      @apply font-normal text-[.9rem] text-[#6a6a6a] lg:text-[1rem];
+      @apply font-normal text-[.9rem] text-[#6a6a6a] dark:text-[#bdbdbd] lg:text-[1rem];
     }
     .blog__card ul span{
       @apply pr-[.5rem] text-secondary;
@@ -397,22 +398,23 @@
       @apply text-secondary font-bold;
     }
     .card__text h3{
-      @apply text-[1.4rem] font-bold leading-10 text-crdtitle pb-[1rem] px-[0rem];
+      @apply text-[1.4rem] font-bold leading-10 text-crdtitle  dark:text-primary pb-[1rem] px-[0rem];
     }
     .card__text p{
-      @apply leading-8 pb-[1rem];
+      @apply leading-8 pb-[1rem] dark:text-[#bdbdbd];
     }
     .blog__card .card__btn{
       @apply px-[1.1rem];
     }
     .card__wrapper{
-      @apply grid grid-cols-1 gap-[1.5rem] lg:grid lg:grid-cols-3 lg:gap-[1.3rem] md:grid md:grid-cols-2 md:gap-[1rem];
+      @apply overflow-hidden gap-[1.5rem] lg:grid lg:grid-cols-3 lg:gap-[1.3rem] md:grid md:grid-cols-2 md:gap-[1rem];
     }
     .blog__btn{
       @apply flex flex-row gap-3 justify-center;
     }
     .blog__btn li a{
-      @apply bg-lgrey rounded-full py-[.3rem] px-[.7rem] font-normal hover:bg-secondary text-vdark;
+      @apply bg-lgrey dark:bg-vdark dark:text-primary rounded-full py-[.3rem] px-[.7rem] font-normal hover:bg-secondary text-vdark
+       dark:hover:bg-secondary;
     }
     .blog__btn li:first-child a{
       @apply bg-secondary;
@@ -426,10 +428,10 @@
       @apply pb-[2rem] lg:max-w-[40rem] lg:text-[.9rem] md:text-[1rem];
     }
     .contact__left h3{
-      @apply pb-[1rem] font-bold lg:text-[1.5rem];
+      @apply pb-[1rem] font-bold dark:text-primary lg:text-[1.5rem];
     }
     .contact__left p{
-      @apply font-bold pb-[1rem] text-[1.2rem];
+      @apply font-bold pb-[1rem] text-[1.2rem] dark:text-[#bdbdbd];
     }
     .contact__left i{
       @apply text-secondary text-[1.7rem];
@@ -441,19 +443,19 @@
       @apply py-[1rem]
     }
     .contact__form ul li input{
-      @apply bg-lgrey pl-[1rem] py-[1rem] mb-[1rem] w-full outline-none;
+      @apply bg-lgrey dark:bg-vdark pl-[1rem] py-[1rem] mb-[1rem] w-full outline-none;
     }
     .contact__form ul li input::placeholder{
       @apply text-[1rem] text-[#747778] font-semibold;
     }
     .contact__form ul input{
-      @apply bg-lgrey pl-[1rem] py-[1rem] mb-[1rem] w-full outline-none;
+      @apply bg-lgrey dark:bg-vdark pl-[1rem] py-[1rem] mb-[1rem] w-full outline-none;
     }
     .contact__form ul input::placeholder{
       @apply text-[1rem] text-[#747778] font-semibold;
     }
     .contact__form ul textarea{
-      @apply bg-lgrey pl-[1rem] py-[1rem] mb-[1rem] w-full outline-none;
+      @apply bg-lgrey dark:bg-vdark pl-[1rem] py-[1rem] mb-[1rem] w-full outline-none;
     }
     .contact__form ul textarea::placeholder{
       @apply text-[#747778] font-semibold;
@@ -484,28 +486,28 @@
       @apply pb-[2rem] lg:max-w-[40rem] lg:text-[.9rem] md:text-[1rem];
     }
     .pcard{
-      @apply bg-lgrey py-[2.5rem] w-full;
+      @apply bg-lgrey dark:bg-vdark py-[2.5rem] w-full;
     }
     .pcard__top{
       @apply text-center;
     }
     .pcard__top i{
-      @apply text-clricon text-[3rem];
+      @apply text-clricon dark:text-[#bdbdbd] text-[3rem];
     }
     .pcard__top h3{
-      @apply py-[.5rem] text-crdtitle;
+      @apply py-[.5rem] text-crdtitle dark:text-primary;
     }
     .pcard__top h2{
       @apply text-[3.5rem] text-secondary;
     }
     .pcard__top p{
-      @apply font-bold text-[1.1rem] pb-[1.5rem];
+      @apply font-bold text-[1.1rem] pb-[1.5rem] dark:text-[#bdbdbd];
     }
     .pcard ul{
       @apply mb-[3rem] text-center;
     }
     .pcard ul li{
-      @apply text-[1.2rem] pb-[.5rem] text-clricon;
+      @apply text-[1.2rem] pb-[.5rem] text-clricon dark:text-[#bdbdbd];
     }
     .pcard ul li i{
       @apply text-secondary;
@@ -561,22 +563,22 @@
       @apply pb-[2rem] lg:max-w-[40rem] lg:text-[.9rem] md:text-[1rem];
     }
     .tcard{
-      @apply bg-lgrey pb-[1rem];
+      @apply bg-lgrey dark:bg-vdark pb-[1rem];
     }
     .tcard img{
       @apply w-full;
     }
     .tcard__text h3{
-      @apply py-[.5rem] text-[1.3rem] text-crdtitle;
+      @apply py-[.5rem] text-[1.3rem] text-crdtitle dark:text-primary;
     }
     .tcard__text p{
-      @apply pb-[.5rem] text-[1rem] font-bold text-clricon;
+      @apply pb-[.5rem] text-[1rem] font-bold text-clricon dark:text-[#bdbdbd];
     }
     .tcard ul{
       @apply flex gap-4 justify-center;
     }
     .tcard ul li a{
-      @apply text-[1.7rem] text-clricon hover:text-secondary;
+      @apply text-[1.7rem] text-clricon hover:text-secondary dark:text-[#bdbdbd] dark:hover:text-secondary;
     }
     .tcard__text{
       @apply text-center;
@@ -777,13 +779,13 @@ body h1, h2{
       text-[1.1rem] font-bold cursor-pointer relative z-[1] overflow-hidden;
     }
     .btn.bg--vera{
-      @apply bg-secondary text-primary;
+      @apply bg-secondary text-primary dark:text-vdark;
     }
     .btn.bg--vera:hover{
-      @apply text-clrtitle;
+      @apply text-clrtitle dark:text-primary;
     }
     .btn.bg--vera::after{
-      @apply content-[""] bg-lgrey absolute z-[-1] left-[-20%] right-[-20%] top-0 bottom-0 
+      @apply content-[""] bg-lgrey dark:bg-vdark absolute z-[-1] left-[-20%] right-[-20%] top-0 bottom-0 
       skew-x-[-45deg] scale-x-[0] scale-y-[2] transition-all duration-700
 
     }
@@ -792,13 +794,13 @@ body h1, h2{
     }
 
     .btn.bg--vera-w{
-      @apply bg-primary text-secondary;
+      @apply bg-primary text-secondary dark:bg-vdark;
     }
     .btn.bg--vera-w:hover{
       @apply text-secondary;
     }
     .btn.bg--vera-w::after{
-      @apply content-[""] bg-lgrey absolute z-[-1] left-[-20%] right-[-20%] top-0 bottom-0 
+      @apply content-[""] bg-lgrey dark:bg-vdark absolute z-[-1] left-[-20%] right-[-20%] top-0 bottom-0 
       skew-x-[-45deg] scale-x-[0] scale-y-[1] transition-all duration-700;
     }
     .btn.bg--vera-w:hover::after{
