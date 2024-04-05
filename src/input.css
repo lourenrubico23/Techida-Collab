@@ -126,7 +126,7 @@
 }
 .choose__card .choose__card__item
 {
-  @apply bg-lgrey px-[1rem] py-[2rem] mb-6 rounded-md
+  @apply bg-lgrey  px-[1rem] py-[2rem] mb-6 rounded-md
 }
 .choose__card .choose__card__item:first-child
 {
@@ -267,7 +267,7 @@
 /* logo slider */
 .logo__slider
 {
-  @apply bg-lgrey lg:my-[2rem]
+  @apply bg-lgrey dark:bg-vdark lg:my-[2rem]
 }
 .logo__slider__wrapper
 {
@@ -322,7 +322,7 @@
 }
 .testimonials__cards p
 {
-  @apply pt-[1rem] pr-[1.1rem] md:pr-[5rem] md:text-[1rem]
+  @apply pt-[1rem] pr-[1.1rem] md:pr-[5rem] md:text-[1rem] 
 }
 
 /* ---------------------------------HOME PAGE END---------------------- */
