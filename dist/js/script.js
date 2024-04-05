@@ -1,3 +1,31 @@
+/* Portfolio */
+const portfolioNavs = document.querySelectorAll(".portfolio__navs button");
+const portfolioFilter = document.querySelectorAll(".portfolio__images .portfolio__images__card");
+
+
+const portfolioFilterImage = e =>{
+  document.querySelector(".active").classList.remove("active");
+
+  e.target.classList.add("active");
+  console.log(e.target);
+
+  portfolioFilter.forEach(card => 
+    {
+      card.classList.add("hide");
+
+      if(card.dataset.name === e.target.dataset.name || e.target.dataset.name === "all")
+      {
+        card.classList.remove("hide");
+      }
+    });
+}
+
+
+
+portfolioNavs.forEach(button => button.addEventListener("click", portfolioFilterImage));
+
+
+
 /* Burger Menu */
 const burgerMenu = document.querySelector(".burger__menu");
 const menu = document.querySelector(".header__action");
