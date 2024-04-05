@@ -13,7 +13,7 @@
 }
 .homebanner__img img
 {
-  @apply lg:max-w-[50rem] md:max-w-[48rem] md:block lg:block 
+  @apply lg:max-w-[40rem] md:max-w-[48rem] md:block lg:block xl:max-w-[50rem]
 }
 
 .homebanner .homebanner__text
@@ -33,23 +33,27 @@
 /* About Us */
 .aboutUs
 {
-  @apply pb-16
+  @apply pb-16 lg:py-[2rem]
 }
+.aboutUs__item
+{
+  @apply lg:grid lg:grid-cols-2 gap-5
+} 
 .aboutUs .aboutUs__text 
 {
  @apply pr-[1rem]
 }
-.aboutUs .aboutUs__text h3
+/* .aboutUs .aboutUs__text h3
 {
   @apply text-[2rem]
-}
-.aboutUs .aboutUs__text p
+} */
+/* .aboutUs .aboutUs__text p
 {
   @apply text-[1rem] pb-[1rem]
-}
+} */
 
 .aboutUs__services__wrapper{
-  @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-6 
+  @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 gap-6 
 }
 
 .aboutUs__services__card{
@@ -71,7 +75,7 @@
   @apply text-[1.8rem] text-secondary pt-3 pb-3
 }
 .aboutUs__services__card p{
-  @apply text-bgfooter font-bold pt-[1rem]
+  @apply text-bgfooter pt-[1rem] lg:pt-0 font-extrabold
 }
 
 .aboutUs__progress
@@ -106,6 +110,20 @@
 {
  @apply text-[2rem] font-bold
 }
+.choose__card
+{
+  @apply md:flex md:flex-wrap md:gap-8
+  lg:grid lg:grid-cols-3 lg:gap-5 
+}
+.choose__card__item
+{
+  @apply md:w-[45%] lg:w-[100%]
+}
+
+.choose__card .choose__card__item:nth-child(3)
+{
+  @apply md:mx-auto
+}
 .choose__card .choose__card__item
 {
   @apply bg-primary px-[1rem] py-[2rem] mb-6 rounded-md
@@ -122,9 +140,42 @@
 {
   @apply text-secondary font-bold text-[1.1rem] uppercase
 }
-.choose .choose__text p
+
+
+/* portfolio */
+.portfolio
 {
-  @apply text-[1rem]
+  @apply py-[2rem]
+}
+.portfolio__navs
+{
+  @apply flex flex-wrap gap-5
+}
+.portfolio .active
+{
+  @apply text-secondary
+}
+.portfolio__images 
+{
+  @apply flex flex-col gap-3 mt-[2rem]
+  md:grid md:grid-cols-2 md:gap-3
+  lg:grid lg:grid-cols-3 lg:gap-5
+}
+.portfolio__images .portfolio__images__card
+{
+  @apply grow basis-[300px]
+}
+.portfolio__images .portfolio__images__card img
+{
+  @apply w-[100%] h-[100%] object-cover
+}
+.portfolio__images__card.hide
+{
+  @apply hidden
+}
+.portfolio__navs button
+{
+  @apply text-[1.3rem] md:text-[1.5rem] font-bold
 }
 
 /* counter */
@@ -175,7 +226,11 @@
 /* logo slider */
 .logo__slider
 {
-  @apply bg-primary
+  @apply bg-primary lg:my-[2rem]
+}
+.logo__slider__wrapper
+{
+  @apply lg:p-6
 }
 .logo__slider__wrapper .logo__cards img
 {
@@ -190,7 +245,7 @@
 } */
 .testimonials .testimonials__cards
 {
-  @apply bg-primary py-[1rem] pl-[1rem] pr-[.5rem] 
+  @apply bg-primary py-[1rem] pl-[1rem] pr-[.5rem]
 }
 .testimonials .testimonials__cards__profile
 {
@@ -226,7 +281,7 @@
 }
 .testimonials__cards p
 {
-  @apply pt-[1rem] pr-[1.1rem]
+  @apply pt-[1rem] pr-[1.1rem] md:pr-[5rem] md:text-[1rem]
 }
 
 /* ---------------------------------HOME PAGE END---------------------- */
