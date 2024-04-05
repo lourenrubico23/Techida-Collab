@@ -3035,6 +3035,11 @@ body h1:is(.dark *), h2:is(.dark *) {
   background-color: rgb(240 240 240 / var(--tw-bg-opacity));
 }
 
+.logo__slider:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 33 33 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 1024px) {
   .logo__slider {
     margin-top: 2rem;
