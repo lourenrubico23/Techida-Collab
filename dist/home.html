@@ -12,6 +12,11 @@
 </head>
 <body class=" bg-primary dark:bg-darkmode transition-all ease-out duration-300">
     
+
+    <div id="progressTop">
+        <span id="progressTop-value">&#x1F815</span>
+    </div>
+
     <div class="wrapper">
         <header class="header">
             <div class="container">
@@ -61,7 +66,7 @@
                         </ul>
                         <div class="header__action__btn block lg:hidden">
                             <button class="btn bg--verb">Join now</button>
-                            <button> <i id="toggledark" onclick="functionToggle(this)" class="fa-solid fa-moon"></i></button>
+                            <button> <i id="toggledark" onclick="functionToggle(this)" class="fa-solid fa-moon" ></i></button>
                         </div>
                     </div>
                     <div class="header__action__btn hidden lg:block">
@@ -76,6 +81,8 @@
                 </div>
             </div>
         </header>
+
+        <div id="particles-js"></div>
     
         <!-- HOME BANNER STARTS -->
     <section class="homebanner">
@@ -332,7 +339,7 @@
                          Quas Tenetur</p>
                     </div>
 
-                    <div class="choose__card__item self-center">
+                    <div class="choose__card__item self-center mt-[0.75rem]">
                         <h4>03.</h4>
                         <h6 class="dark:text-primary">Powerful Strategies</h6>
                         <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.

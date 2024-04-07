@@ -1,7 +1,6 @@
-/* Portfolio */
+// Portfolio 
 const portfolioNavs = document.querySelectorAll(".portfolio__navs button");
 const portfolioFilter = document.querySelectorAll(".portfolio__images .portfolio__images__card");
-
 
 const portfolioFilterImage = e =>{
   document.querySelector(".active").classList.remove("active");
@@ -20,9 +19,40 @@ const portfolioFilterImage = e =>{
     });
 }
 
-
-
 portfolioNavs.forEach(button => button.addEventListener("click", portfolioFilterImage));
+
+//Scroll on Top
+let calcScrollValue = () => 
+{
+  let scrollProgress = document.getElementById("progressTop");
+  let progressValue = document.getElementById("progressTop-value");
+
+  let pos = document.documentElement.scrollTop;
+  let calcHeight = document.documentElement.scrollHeight - 
+  document.documentElement.clientHeight;
+
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+
+  if(pos > 100)
+  {
+    scrollProgress.style.opacity = "100";
+  }
+  else
+  {
+    scrollProgress.style.opacity = "0";
+  }
+  
+
+  scrollProgress.addEventListener("click", () => 
+{
+  document.documentElement.scrollTop = 0;
+}); 
+
+scrollProgress.style.background = `conic-gradient(#1ea84f ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
 
 
 // change on click

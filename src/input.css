@@ -6,7 +6,23 @@
     @apply max-w-[80rem] lg:px-6 lg:py-0 p-6 first-letter:w-full mx-auto;
     /* added lg:px-6 lg:py-0 */
 }
+html
+{
+  @apply scroll-smooth;
+}
 /* ---------------------------------HOME PAGE START---------------------- */
+#progressTop
+{
+  @apply fixed bottom-[20px] right-[10px] 
+  h-[70px] w-[70px] opacity-0 grid place-items-center
+  rounded-full z-[100] cursor-pointer shadow-md
+}
+#progressTop-value
+{
+  @apply block h-[calc(100%-15px)] w-[calc(100%-15px)] bg-primary
+  rounded-full grid place-items-center text-[35px] text-vdark
+}
+
 .homebanner .homebanner__wrapper
 {
   @apply grid grid-cols-1 lg:grid-cols-2 lg:gap-[5rem]  place-items-center lg:pt-[10rem] 
@@ -27,7 +43,10 @@
 }
 #particles-js
 {
-  @apply bg-[#f7f5f2]
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
 }
 
 /* About Us */
@@ -126,7 +145,7 @@
 }
 .choose__card .choose__card__item
 {
-  @apply bg-lgrey  px-[1rem] py-[2rem] mb-6 rounded-md
+  @apply bg-lgrey dark:bg-vdark px-[1rem] py-[2rem] mb-6 rounded-md
 }
 .choose__card .choose__card__item:first-child
 {
