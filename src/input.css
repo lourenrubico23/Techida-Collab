@@ -415,7 +415,7 @@ html
 
 .header__action .header__navm
 {
-  @apply flex flex-col gap-5 bg-primary lg:hidden  dark:bg-vdark; 
+  @apply flex flex-col gap-5 bg-primary px-3 lg:hidden dark:bg-vdark; 
 }
 
 /* drop down start */
@@ -981,7 +981,7 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
   @layer utilities{
     /* ------------------BUTTONS---------------- */
     .btn{
-      @apply inline-block py-[.6rem] px-[1.8rem] rounded-full
+      @apply inline-block py-[.7rem] px-[1.8rem] rounded-full
       text-[1.1rem] font-bold cursor-pointer relative z-[1] overflow-hidden;
     }
     .btn.bg--vera::before{
