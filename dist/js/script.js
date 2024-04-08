@@ -1,3 +1,14 @@
+//sticky
+const header = document.querySelector(".header");
+window.console.log(scrollY);
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= 100) {
+    header.classList.add("hgrey");
+  } else {
+    header.classList.remove("hgrey");
+  }
+});
+
 // Portfolio 
 const portfolioNavs = document.querySelectorAll(".portfolio__navs button");
 const portfolioFilter = document.querySelectorAll(".portfolio__images .portfolio__images__card");
@@ -92,18 +103,23 @@ links.forEach((link) => {
 const darkmode = document.querySelector("#toggle");
 darkmode.addEventListener("click", () => {
   document.documentElement.classList.toggle("dark");
+
+pJSDom[0].pJS.particles.color.value = '#818589';
+pJSDom[0].pJS.particles.line_linked.color = '#818589';
+pJSDom[0].pJS.fn.particlesRefresh();
+
+
+
 });
 const darkmodeM = document.querySelector("#toggledark");
 darkmodeM.addEventListener("click", () => {
   document.documentElement.classList.toggle("dark");
+
+  pJSDom[0].pJS.particles.color.value = '#818589';
+  pJSDom[0].pJS.particles.line_linked.color = '#818589';
+  pJSDom[0].pJS.fn.particlesRefresh();
 });
 
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("showdrpdwn");
-}
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {

@@ -10,6 +10,23 @@ html
 {
   @apply scroll-smooth;
 }
+.fa-moon
+{
+  @apply px-[2rem] py-[2rem]
+}
+.fa-sun
+{
+  @apply dark:text-primary 
+}
+.header
+{
+  @apply fixed w-[100%] z-[100] transition-all
+}
+.hgrey
+{
+  @apply bg-lgrey
+}
+
 /* ---------------------------------HOME PAGE START---------------------- */
 #progressTop
 {
@@ -25,7 +42,7 @@ html
 
 .homebanner .homebanner__wrapper
 {
-  @apply grid grid-cols-1 lg:grid-cols-2 lg:gap-[5rem]  place-items-center lg:pt-[10rem] 
+  @apply grid grid-cols-1 lg:grid-cols-2 lg:gap-[5rem]  place-items-center lg:pt-[10rem] pt-[6rem] overflow-hidden
 }
 .homebanner__img img
 {
@@ -34,7 +51,7 @@ html
 
 .homebanner .homebanner__text
 {
-  @apply lg:pr-[8rem] md:pr-[2rem] pr-[1rem];
+  @apply lg:pr-[8rem] md:pr-[2rem] pr-[1rem]; 
 }
 
 .homebanner .homebanner__text p
@@ -43,16 +60,13 @@ html
 }
 #particles-js
 {
-  position: absolute;
-  width: 100%;
-  height: 80%;
-  z-index: -1;
+  @apply absolute w-[100%] h-[80%] z-[-1]
 }
 
 /* About Us */
 .aboutUs
 {
-  @apply pb-16 lg:py-[2rem]
+  @apply pb-16 lg:py-[2rem] overflow-hidden
 }
 .aboutUs__item
 {
@@ -72,7 +86,7 @@ html
 } */
 
 .aboutUs__services__wrapper{
-  @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 gap-6 
+  @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 gap-6 overflow-hidden
 }
 
 .aboutUs__services__card{
@@ -164,7 +178,7 @@ html
 /* portfolio */
 .portfolio
 {
-  @apply py-[2rem]
+  @apply py-[2rem] overflow-hidden
 }
 .portfolio__navs
 {
@@ -245,7 +259,7 @@ html
 }
 .counter .counter__wrapper
 {
-  @apply p-12
+  @apply p-12 overflow-hidden
 }
 .counter .counter__item
 {
@@ -290,7 +304,7 @@ html
 }
 .logo__slider__wrapper
 {
-  @apply lg:p-6
+  @apply lg:p-6 overflow-hidden
 }
 .logo__slider__wrapper .logo__cards img
 {
@@ -306,6 +320,10 @@ html
 .testimonials .testimonials__cards
 {
   @apply bg-lgrey dark:bg-vdark py-[1rem] pl-[1rem] pr-[.5rem]
+}
+.testimonials__wrapper
+{
+  @apply overflow-hidden
 }
 .testimonials .testimonials__cards__profile
 {
@@ -363,7 +381,11 @@ html
 }
 .header__navd li a 
 { 
-  @apply text-[1rem] text-vdark font-bold
+  @apply text-[1rem] text-vdark font-bold dark:text-lgrey 
+}
+.header__navd li a:hover
+{
+  @apply text-secondary
 }
 .header__action
 {
@@ -371,6 +393,8 @@ html
   px-0 pt-0 overflow-hidden transition-all shadow-md duration-500 delay-300 ease-in-out
   bg-primary lg:opacity-0;
 }
+
+
 .header__action.open
 {
   @apply h-[45vh] pt-[1rem] transition-all z-[1] duration-500 delay-300 ease-in-out
@@ -391,7 +415,7 @@ html
 
 .header__action .header__navm
 {
-  @apply flex flex-col gap-5 bg-primary p-[1rem] lg:hidden;
+  @apply flex flex-col gap-5 bg-primary lg:hidden  dark:bg-vdark; 
 }
 
 /* drop down start */
@@ -428,7 +452,7 @@ html
 }
 .header__action .header__navm li a
 {
-  @apply font-medium md:text-[1.3rem] lg:text-[1.3rem] text-[1rem]  text-vdark 
+  @apply font-medium md:text-[1.3rem] lg:text-[1.3rem] text-[1rem]  text-vdark dark:text-lgrey
   ease-in-out duration-100 delay-150
  opacity-100 hover:py-[.5rem] hover:text-secondary
   hover:delay-300 hover:bg-opacity-25;
@@ -445,10 +469,15 @@ html
 {
   @apply m-3
 }
-.header__action__btn button:nth-child(2)
+.header__action__btn i.fa-moon
 {
   @apply border-secondary border-[.1rem]
-  py-[.8rem] px-[1rem] rounded-full
+rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
+}
+.header__action__btn i.fa-sun
+{
+  @apply border-secondary border-[.1rem]
+  rounded-full px-[1rem] py-[1rem]
 }
 .header__action__btn button:nth-child(2) i
 {
@@ -462,7 +491,7 @@ html
 .burger__menu span
 {
    @apply w-[1.5rem]  h-[.2rem]
- bg-vdark block rounded-full transition-all;
+ bg-vdark dark:bg-primary block rounded-full transition-all;
 }
 .burger__menu span:nth-child(2)
 {
@@ -479,11 +508,11 @@ html
 
 .pages__drpdwn .contents{
   @apply max-h-[0rem] overflow-hidden transition-all 
-  flex flex-col gap-3 
+  flex flex-col gap-3
 }
 .pages__drpdwn .contents.open{
-  @apply max-h-[50rem] transition-all pt-3 bg-primary  
-  border-vdark border-[1px] rounded-md p-[.4rem]
+  @apply max-h-[50rem] transition-all pt-3 bg-primary dark:bg-vdark
+  border-vdark dark:border-primary border-[1px] rounded-md p-[.4rem]
 }
 
 .pages__drpdwn .contents li a 
