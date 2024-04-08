@@ -70,7 +70,7 @@ burgerMenu.addEventListener("click", () =>{
     menu.classList.toggle("open");
 });
 
-/* Links / Dropdown */
+/* Links / Dropdown - header */
 const headerlinks = document.querySelectorAll(".pages__drpdwn a");
 headerlinks.forEach((headerlink) => {
   headerlink.addEventListener("click", () => {
@@ -79,7 +79,7 @@ headerlinks.forEach((headerlink) => {
   });
 });
 
-/* Links / Dropdown */
+/* Links / Dropdown - faq */
 const links = document.querySelectorAll(".faq__cards h5");
 links.forEach((link) => {
   link.addEventListener("click", () => {
