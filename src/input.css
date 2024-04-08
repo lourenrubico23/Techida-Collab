@@ -369,7 +369,7 @@ html
 /* ---------------------------------HOME PAGE HEADER START---------------------- */
 .header
 {
-  @apply bg-primary dark:bg-vdark
+  @apply bg-primary
 }
 .header img
 {
@@ -389,16 +389,14 @@ html
 }
 .header__action
 {
-  @apply absolute top-[80px] left-0 right-0 h-0 md:h-[49vh] lg:h-[49vh] z-[1]
-  px-0 pt-0 overflow-hidden transition-all shadow-md duration-500 delay-300 ease-in-out
-  bg-primary lg:opacity-0;
+  @apply absolute top-[95px] left-0 right-0 h-0 z-[1]
+  px-0 pt-0 overflow-hidden transition-all shadow-md 
+  bg-primary lg:opacity-0 lg:flex lg:flex-col dark:bg-vdark;
 }
-
-
 .header__action.open
 {
-  @apply h-[45vh] pt-[1rem] transition-all z-[1] duration-500 delay-300 ease-in-out
-  lg:hidden      
+  @apply h-fit transition-all z-[1] duration-500 ease-in-out 
+  lg:hidden     
 }
 .header__wrapper
 {
@@ -407,15 +405,9 @@ html
 .header .container{
   @apply relative 
 }
-
-.header__action
-{
-  @apply lg:flex lg:flex-col;
-}
-
 .header__action .header__navm
 {
-  @apply flex flex-col gap-5 bg-primary lg:hidden  dark:bg-vdark; 
+  @apply flex flex-col gap-5 lg:hidden px-5  ; 
 }
 
 /* drop down start */
@@ -452,14 +444,11 @@ html
 }
 .header__action .header__navm li a
 {
-  @apply font-medium md:text-[1.3rem] lg:text-[1.3rem] text-[1rem]  text-vdark dark:text-lgrey
+  @apply font-medium md:text-[1.3rem] lg:text-[1.3rem] text-[1rem] 
+   text-vdark dark:text-lgrey
   ease-in-out duration-100 delay-150
  opacity-100 hover:py-[.5rem] hover:text-secondary
   hover:delay-300 hover:bg-opacity-25;
-}
-.header__action__wrapper
-{
-  @apply pb-10 flex  flex-col gap-5  bg-primary
 }
 .header__action__btn button:first-child
 {
@@ -467,7 +456,7 @@ html
 }
 .header__action__btn button
 {
-  @apply m-3
+  @apply m-3 translate-y-1
 }
 .header__action__btn i.fa-moon
 {
@@ -477,7 +466,7 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
 .header__action__btn i.fa-sun
 {
   @apply border-secondary border-[.1rem]
-  rounded-full px-[1rem] py-[1rem]
+  rounded-full px-[1rem] py-[1rem] mb-2
 }
 .header__action__btn button:nth-child(2) i
 {
@@ -790,7 +779,7 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
 /* -----------------------------------------SERVICES PAGE----------------------------------- */
 /* ----------BANNER------------- */
     .banner{
-      @apply bg-bgfooter text-white py-[2rem]
+      @apply bg-bgfooter text-white pt-[8rem] pb-[3rem]
     }
     .bannernav a{
       @apply text-white 
