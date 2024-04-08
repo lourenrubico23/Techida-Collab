@@ -733,13 +733,12 @@ a {
 
 @media (min-width: 768px) {
   .header__action {
-    min-height: 49vh;
+    height: 49vh;
   }
 }
 
 @media (min-width: 1024px) {
   .header__action {
-<<<<<<< HEAD
     height: 49vh;
     opacity: 0;
   }
@@ -748,12 +747,6 @@ a {
 .header__action.open {
   z-index: 1;
   height: 45vh;
-=======
-  margin-top: 4.7rem;
-  width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
->>>>>>> bonilla
   padding-top: 1rem;
   transition-property: all;
   transition-duration: 500ms;
@@ -781,7 +774,8 @@ a {
   gap: 1.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(248 246 244 / var(--tw-bg-opacity));
-  padding: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .header__action .header__navm:is(.dark *) {
@@ -2324,8 +2318,8 @@ body h1:is(.dark *), h2:is(.dark *) {
   cursor: pointer;
   overflow: hidden;
   border-radius: 9999px;
-  padding-top: .6rem;
-  padding-bottom: .6rem;
+  padding-top: .7rem;
+  padding-bottom: .7rem;
   padding-left: 1.8rem;
   padding-right: 1.8rem;
   font-size: 1.1rem;
