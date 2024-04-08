@@ -9,7 +9,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class=" bg-primary dark:bg-darkmode transition-all ease-out duration-300">
-
+  
+    <div id="progressTop">
+      <span id="progressTop-value">&#x1F815</span>
+    </div>
+    
     <!-- Header -->
     <header class="header">
       <div class="container">
@@ -17,12 +21,12 @@
               <a href="#"><img src="./img/home/logo.png" alt=""></a>
   
               <ul class="header__navd md:invisible lg:visible">
-                  <li><a href="#">Home</a></li>
+                  <li><a href="./home.html">Home</a></li>
                   <li><a href="#">About</a></li>
-                  <li><a href="#">Services</a></li>
+                  <li><a href="./services.html">Services</a></li>
                   <li><a href="#">Pages</a></li>
                   <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li><a href="./blog.html">Blog</a></li>
                   <li><a href="#">Contact Us</a></li>
               </ul>
               <div class="header__action">
@@ -59,7 +63,7 @@
                   </ul>
                   <div class="header__action__btn block lg:hidden">
                       <button class="btn bg--verb">Join now</button>
-                      <button> <i id="toggledark" onclick="functionToggle(this)" class="fa-solid fa-moon"></i></button>
+                      <button> <i id="toggledark" onclick="functionToggle(this)" class="fa-solid fa-moon" ></i></button>
                   </div>
               </div>
               <div class="header__action__btn hidden lg:block">

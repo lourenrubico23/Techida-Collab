@@ -386,7 +386,7 @@ html
 
 .header__action
 {
-  @apply lg:flex lg:flex-col
+  @apply lg:flex lg:flex-col;
 }
 
 .header__action .header__navm
@@ -508,7 +508,7 @@ html
       @apply lg:text-[2.7rem];
     }
     .blog__card{
-      @apply bg-primary dark:bg-vdark mb-6 rounded-md border-none border-transparent w-full pb-[1.5rem] 
+      @apply bg-lgrey dark:bg-vdark mb-6 rounded-md border-none border-transparent w-full pb-[1.5rem] 
       lg:w-full lg:rounded-md md:w-full md:mb-[1rem];
     }
     .blog__card img{
@@ -544,6 +544,41 @@ html
     .card__wrapper{
       @apply gap-[1.5rem] overflow-hidden lg:grid lg:grid-cols-3 lg:gap-[1.3rem] md:grid md:grid-cols-2 md:gap-[1rem];
     }
+
+    /* Blog - Home */
+    .card__wrapper2{
+      @apply gap-[1.5rem] overflow-hidden lg:grid lg:grid-cols-3 lg:gap-[1.3rem] md:flex md:flex-wrap md:justify-center md:gap-[1.5rem];
+    }
+    .card__wrapper2 .blog__card2:nth-child(3){
+      @apply md:mx-auto;
+    }
+    .blog__card2{
+      @apply bg-lgrey dark:bg-vdark mb-6 rounded-md border-none border-transparent w-full pb-[1.5rem] 
+      lg:w-full lg:rounded-md md:w-[47%] md:mb-[1rem];
+    }
+    .blog__card2 img{
+      @apply rounded-md w-full md:w-full;
+    }
+    .blog__card2 ul h3{
+      @apply font-normal text-[.9rem] text-[#6a6a6a] dark:text-[#bdbdbd] lg:text-[1rem];
+    }
+    .blog__card2 ul span{
+      @apply pr-[.5rem] text-secondary;
+    }
+    .blog__card2 ul{
+      @apply flex flex-row gap-10 py-[1.1rem] justify-center lg:gap-10 md:gap-6;
+    }
+    .blog__card2 .card__text{
+      @apply px-[1.1rem];
+    }
+    .blog__card2 .card__btn a{
+      @apply text-secondary font-bold;
+    }
+    .blog__card2 .card__btn{
+      @apply px-[1.1rem];
+    }
+    /* Blog - Home Ends */
+
     .blog__btn{
       @apply flex flex-row gap-3 justify-center;
     }
@@ -590,7 +625,7 @@ html
       @apply text-[1rem] text-[#747778] font-semibold;
     }
     .contact__form ul textarea{
-      @apply bg-lgrey dark:bg-vdark dark:text-primary pl-[1rem] py-[1rem] mb-[1rem] w-full outline-none rounded-md;
+      @apply bg-lgrey dark:bg-vdark dark:text-primary pl-[1rem] py-[1rem] mb-[1rem] w-full outline-none rounded-md resize-none;
     }
     .contact__form ul textarea::placeholder{
       @apply text-[#747778] font-semibold;
@@ -917,21 +952,24 @@ html
   @layer utilities{
     /* ------------------BUTTONS---------------- */
     .btn{
-      @apply inline-block py-[.7rem] px-[1.3rem] rounded-full
+      @apply inline-block py-[.6rem] px-[1.8rem] rounded-full
       text-[1.1rem] font-bold cursor-pointer relative z-[1] overflow-hidden;
     }
+    .btn.bg--vera::before{
+      @apply border-secondary border-[1px] ease-in-out duration-300;
+    }
     .btn.bg--vera{
-      @apply bg-secondary text-primary border-secondary border-[1px] dark:text-vdark dark:border-[1px] dark:border-secondary;
+      @apply bg-secondary text-primary dark:text-vdark border-secondary border-[1px] dark:border-[1px] dark:border-secondary;
     }
     .btn.bg--vera:hover{
       @apply text-clrtitle dark:text-primary bg-transparent border-transparent dark:border-transparent ease-in-out duration-300;
     }
     .btn.bg--vera::after{
       @apply content-[""] bg-lgrey dark:bg-vdark absolute z-[-1] left-[-20%] right-[-20%] top-0 bottom-0 
-      skew-x-[-45deg] scale-x-[0] scale-y-[2] transition-all duration-700  
+      skew-x-[45deg] scale-x-[0] scale-y-[2] transition-all duration-700  
     }
     .btn.bg--vera:hover::after{
-      @apply skew-x-[-45deg] scale-x-[1] scale-y-[1] transition-all duration-700;
+      @apply skew-x-[45deg] scale-x-[1] scale-y-[1] transition-all duration-700;
     }
 
     .btn.bg--vera-w{
@@ -942,27 +980,24 @@ html
     }
     .btn.bg--vera-w::after{
       @apply content-[""] bg-lgrey dark:bg-vdark absolute z-[-1] left-[-20%] right-[-20%] top-0 bottom-0 
-      skew-x-[-45deg] scale-x-[0] scale-y-[1] transition-all duration-700;
+      skew-x-[45deg] scale-x-[0] scale-y-[1] transition-all duration-700;
     }
     .btn.bg--vera-w:hover::after{
-      @apply skew-x-[-45deg] scale-x-[1] scale-y-[1] transition-all duration-700;
+      @apply skew-x-[45deg] scale-x-[1] scale-y-[1] transition-all duration-700;
     }
 
     .btn.bg--verb{
-      @apply bg-secondary text-primary;
+      @apply bg-secondary text-primary border-secondary border-[1px] dark:text-vdark dark:border-[1px] dark:border-secondary;
     }
     .btn.bg--verb:hover{
-      @apply text-vdark;
-    }
-    .btn.bg--verb{
-      @apply hover:bg-lgrey hover:text-vdark;
+      @apply text-clrtitle dark:text-primary bg-transparent border-transparent dark:border-transparent ease-in-out duration-300;
     }
     .btn.bg--verb::after{
-      @apply content-[""] bg-lgrey absolute z-[-1] left-[-20%] right-[-20%] top-0 bottom-0 
-      skew-x-[-45deg] scale-x-[0] scale-y-[1] transition-all duration-700  border-secondary;
+      @apply content-[""] bg-lgrey dark:bg-vdark absolute z-[-1] left-[-20%] right-[-20%] top-0 bottom-0 
+      skew-x-[45deg] scale-x-[0] scale-y-[1] transition-all duration-700  border-secondary;
     }
     .btn.bg--verb:hover::after{
-      @apply skew-x-[-45deg] scale-x-[1] scale-y-[1] transition-all duration-700;
+      @apply skew-x-[45deg] scale-x-[1] scale-y-[1] transition-all duration-700;
     }
 
 
