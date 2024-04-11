@@ -831,11 +831,14 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
     .faq__wrapper{
       @apply flex flex-col lg:grid grid-cols-2 gap-3
     }
+   .faq__image img{
+      @apply mx-auto
+    }
     .faq__title{
       @apply lg:w-[60%] pb-6
     }
     .faq__question{
-      @apply top-[5rem] relative pb-[3rem] 
+      @apply top-[5rem] relative pb-[3rem] cursor-pointer
     }
     .faq__cards{
       @apply bg-lgrey mb-5 p-[.8rem] w-full dark:bg-vdark rounded-md

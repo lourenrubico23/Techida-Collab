@@ -2032,6 +2032,11 @@ a {
   }
 }
 
+.faq__image img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .faq__title {
   padding-bottom: 1.5rem;
 }
@@ -2045,6 +2050,7 @@ a {
 .faq__question {
   position: relative;
   top: 5rem;
+  cursor: pointer;
   padding-bottom: 3rem;
 }
 
