@@ -22,10 +22,13 @@ module.exports = {
           outfitregular: ["OutfitRegular", "sans-serif"],
           outfitsemibold: ["OutfitSemiBold", "sans-serif"],
         },
+        screens:{
+          'xr': {'min': '390px', 'max': '844px'},
+          
      
     
     },
   },
   plugins: [],
 }
-
+}

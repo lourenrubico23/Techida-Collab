@@ -474,6 +474,12 @@ h1 {
   font-weight: 790;
 }
 
+@media (min-width: 390px) and (max-width: 844px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
 h2 {
   font-family: OutfitBold, sans-serif;
   font-size: 2.7rem;
@@ -634,6 +640,12 @@ a {
 
 .container {
   width: 100%;
+}
+
+@media (min-width: 390px) {
+  .container {
+    max-width: 390px;
+  }
 }
 
 @media (min-width: 640px) {
@@ -1013,6 +1025,14 @@ a {
   padding-bottom: 2rem;
 }
 
+@media (min-width: 390px) and (max-width: 844px) {
+  .blog {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
+
 .blog__title p {
   padding-bottom: 2rem;
 }
@@ -1371,6 +1391,14 @@ a {
   padding-bottom: 2rem;
 }
 
+@media (min-width: 390px) and (max-width: 844px) {
+  .contact {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
+
 .contact__title p {
   padding-bottom: 2rem;
 }
@@ -1565,6 +1593,14 @@ a {
   padding-bottom: 2rem;
 }
 
+@media (min-width: 390px) and (max-width: 844px) {
+  .map {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
+
 /* .map__wrapper{
       @apply w-[23.5rem] lg:w-[80rem] md:w-[45rem];
     } */
@@ -1579,6 +1615,14 @@ a {
 .pricing {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+@media (min-width: 390px) and (max-width: 844px) {
+  .pricing {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
 }
 
 .pricing__title p {
@@ -1768,6 +1812,14 @@ a {
   padding-bottom: 2rem;
 }
 
+@media (min-width: 390px) and (max-width: 844px) {
+  .team {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
+
 .team__title p {
   padding-bottom: 2rem;
 }
@@ -1890,6 +1942,14 @@ a {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 390px) and (max-width: 844px) {
+  .banner__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
+
 .bannernav a {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1913,6 +1973,14 @@ a {
   }
 }
 
+@media (min-width: 390px) and (max-width: 844px) {
+  .services {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
+
 .services__wrapper {
   gap: 1.5rem;
   overflow: hidden;
@@ -1929,6 +1997,13 @@ a {
   .services__wrapper {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 390px) and (max-width: 844px) {
+  .services__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1963,6 +2038,12 @@ a {
 }
 
 @media (min-width: 1024px) {
+  .services__card {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 844px) {
   .services__card {
     margin-bottom: 0px;
   }
@@ -2031,6 +2112,14 @@ a {
   overflow: hidden;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+@media (min-width: 390px) and (max-width: 844px) {
+  .faq {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
 }
 
 .faq__wrapper {
@@ -2138,6 +2227,14 @@ a {
   background-color: rgb(27 28 27 / var(--tw-bg-opacity));
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+@media (min-width: 390px) and (max-width: 844px) {
+  .footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
 }
 
 .footer__wrapper {
@@ -2748,6 +2845,14 @@ html {
   color: rgb(33 33 33 / var(--tw-text-opacity));
 }
 
+@media (min-width: 390px) and (max-width: 844px) {
+  .homebanner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
+
 .homebanner .homebanner__wrapper {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -2781,6 +2886,14 @@ html {
 @media (min-width: 1280px) {
   .homebanner__img img {
     max-width: 50rem;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 844px) {
+  .homebanner__img img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
   }
 }
 
@@ -2840,6 +2953,14 @@ html {
   }
 }
 
+@media (min-width: 390px) and (max-width: 844px) {
+  .aboutUs {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
+
 .aboutUs__item {
   gap: 1.25rem;
 }
@@ -2878,6 +2999,13 @@ html {
 }
 
 @media (min-width: 1024px) {
+  .aboutUs__services__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 390px) and (max-width: 844px) {
   .aboutUs__services__wrapper {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -3050,6 +3178,14 @@ html {
   }
 }
 
+@media (min-width: 390px) and (max-width: 844px) {
+  .choose {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
+
 .choose .choose__text {
   padding-right: 2rem;
 }
@@ -3079,6 +3215,15 @@ html {
   }
 }
 
+@media (min-width: 390px) and (max-width: 844px) {
+  .choose__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+}
+
 .choose__card__item {
   margin-bottom: 2rem;
 }
@@ -3097,7 +3242,21 @@ html {
   }
 }
 
+@media (min-width: 390px) and (max-width: 844px) {
+  .choose__card__item {
+    margin-bottom: 0px;
+    width: 45%;
+  }
+}
+
 @media (min-width: 768px) {
+  .choose__card .choose__card__item:nth-child(3) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 844px) {
   .choose__card .choose__card__item:nth-child(3) {
     margin-left: auto;
     margin-right: auto;
@@ -3136,6 +3295,14 @@ html {
 .portfolio {
   overflow: hidden;
   padding-top: 4rem;
+}
+
+@media (min-width: 390px) and (max-width: 844px) {
+  .portfolio {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
 }
 
 .portfolio__navs {
@@ -3301,6 +3468,14 @@ html {
   text-align: center;
 }
 
+@media (min-width: 390px) and (max-width: 844px) {
+  .counter {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
+
 .counter .counter__wrapper {
   overflow: hidden;
   padding: 3rem;
@@ -3393,6 +3568,14 @@ html {
   }
 }
 
+@media (min-width: 390px) and (max-width: 844px) {
+  .logo__slider {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+}
+
 .logo__slider__wrapper {
   overflow: hidden;
 }
@@ -3425,6 +3608,14 @@ html {
 @media (min-width: 1024px) {
   .testimonials {
     padding-top: 4rem;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 844px) {
+  .testimonials {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
   }
 }
 
