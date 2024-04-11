@@ -864,7 +864,7 @@ a {
 
 @media (min-width: 768px) {
   .header__action .header__navm li a {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -1956,6 +1956,12 @@ a {
   background-color: rgb(33 33 33 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 768px) {
+  .services__card {
+    margin-bottom: 0px;
+  }
+}
+
 @media (min-width: 1024px) {
   .services__card {
     margin-bottom: 0px;
@@ -2130,6 +2136,8 @@ a {
 .footer {
   --tw-bg-opacity: 1;
   background-color: rgb(27 28 27 / var(--tw-bg-opacity));
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .footer__wrapper {
@@ -3036,16 +3044,10 @@ html {
 
 /* choose */
 
-<<<<<<< HEAD
 @media (min-width: 1024px) {
   .choose {
     padding-top: 2rem;
   }
-=======
-.choose {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
->>>>>>> ella
 }
 
 .choose .choose__text {
