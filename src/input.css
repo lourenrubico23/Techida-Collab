@@ -91,7 +91,7 @@ html
 
 .aboutUs__services__card{
   @apply dark:bg-vdark mb-3 lg:mb-0 pl-[1rem] py-[1rem] rounded-md relative z-[1] 
-  flex flex-row items-center gap-4
+  flex flex-row items-center gap-4 bg-lgrey
 }
 .aboutUs__services__card::before{
   @apply content-[""] absolute top-0 left-0 h-[100%] w-0 bg-secondary z-[-1]
@@ -130,7 +130,7 @@ html
 }
 .aboutUs__progress .aboutUs__skill__bar
 {
-  @apply h-[8px] w-[100%] rounded-sm bg-primary
+  @apply h-[8px] w-[100%] rounded-sm bg-lgrey
   mt-[6px]
 }
 
@@ -200,8 +200,9 @@ html
 }
 .portfolio__images .portfolio__images__card img
 {
-  @apply w-[100%] h-[100%] object-cover 
+  @apply w-[100%]  h-[366px] lg:h-[397.34px] object-cover 
 }
+
 
 .portfolio__images__card.hide
 {
@@ -220,8 +221,9 @@ html
 }
 .portfolio__images__intro h5
 {
-  @apply pt-[10rem] lg:pt-[14rem]
+  @apply pt-[12rem] lg:pt-[14rem] 
 }
+
 .portfolio__images__card:hover .portfolio__images__intro
 {
   @apply h-[100%] opacity-100
@@ -232,6 +234,7 @@ html
 {
   @apply text-[1.5rem] text-primary my-[.2rem] 
 }
+
 .portfolio__images__intro p
 {
   @apply text-primary text-[1rem] font-bold
@@ -313,10 +316,10 @@ html
 
 /* testimonials */
 
-/* .testimonials 
+.testimonials 
 {
-  @apply mx-[1rem];
-} */
+  @apply cursor-grab select-none
+}
 .testimonials .testimonials__cards
 {
   @apply bg-lgrey dark:bg-vdark py-[1rem] pl-[1rem] pr-[.5rem]
@@ -369,7 +372,7 @@ html
 /* ---------------------------------HOME PAGE HEADER START---------------------- */
 .header
 {
-  @apply bg-primary
+  @apply bg-primary 
 }
 .header img
 {
@@ -381,7 +384,7 @@ html
 }
 .header__navd li a 
 { 
-  @apply text-[1rem] text-vdark font-bold dark:text-lgrey 
+  @apply text-[1rem] text-vdark font-bold dark:text-lgrey cursor-pointer
 }
 .header__navd li a:hover
 {

@@ -695,6 +695,7 @@ a {
 }
 
 .header__navd li a {
+  cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
   --tw-text-opacity: 1;
@@ -2277,8 +2278,8 @@ body h1:is(.dark *), h2:is(.dark *) {
   right: -150px;
 }
 
-.right-\[-263px\] {
-  right: -263px;
+.right-\[-270px\] {
+  right: -270px;
 }
 
 .top-\[-28px\] {
@@ -2361,6 +2362,14 @@ body h1:is(.dark *), h2:is(.dark *) {
 
 .pb-1 {
   padding-bottom: 0.25rem;
+}
+
+.pb-\[\.7rem\] {
+  padding-bottom: .7rem;
+}
+
+.pb-\[3rem\] {
+  padding-bottom: 3rem;
 }
 
 .pt-3 {
@@ -2850,6 +2859,8 @@ html {
   align-items: center;
   gap: 1rem;
   border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 240 240 / var(--tw-bg-opacity));
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
@@ -2994,7 +3005,7 @@ html {
   width: 100%;
   border-radius: 0.125rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(248 246 244 / var(--tw-bg-opacity));
+  background-color: rgb(240 240 240 / var(--tw-bg-opacity));
 }
 
 /* choose */
@@ -3128,10 +3139,16 @@ html {
 }
 
 .portfolio__images .portfolio__images__card img {
-  height: 100%;
+  height: 366px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  .portfolio__images .portfolio__images__card img {
+    height: 397.34px;
+  }
 }
 
 .portfolio__images__card.hide {
@@ -3169,7 +3186,7 @@ html {
 }
 
 .portfolio__images__intro h5 {
-  padding-top: 10rem;
+  padding-top: 12rem;
 }
 
 @media (min-width: 1024px) {
@@ -3352,10 +3369,12 @@ html {
 
 /* testimonials */
 
-/* .testimonials 
-{
-  @apply mx-[1rem];
-} */
+.testimonials {
+  cursor: grab;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
 
 .testimonials .testimonials__cards {
   --tw-bg-opacity: 1;
@@ -3462,16 +3481,16 @@ html {
     visibility: hidden;
   }
 
-  .md\:right-\[-210px\] {
-    right: -210px;
+  .md\:right-\[-205px\] {
+    right: -205px;
   }
 
-  .md\:right-\[-300px\] {
-    right: -300px;
+  .md\:right-\[-305px\] {
+    right: -305px;
   }
 
-  .md\:right-\[-540px\] {
-    right: -540px;
+  .md\:right-\[-543px\] {
+    right: -543px;
   }
 }
 
@@ -3480,12 +3499,12 @@ html {
     visibility: visible;
   }
 
-  .lg\:right-\[-178px\] {
-    right: -178px;
+  .lg\:right-\[-174px\] {
+    right: -174px;
   }
 
-  .lg\:right-\[-260px\] {
-    right: -260px;
+  .lg\:right-\[-258px\] {
+    right: -258px;
   }
 
   .lg\:right-\[-455px\] {
