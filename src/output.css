@@ -3036,16 +3036,10 @@ html {
 
 /* choose */
 
-<<<<<<< HEAD
 @media (min-width: 1024px) {
   .choose {
     padding-top: 2rem;
   }
-=======
-.choose {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
->>>>>>> ella
 }
 
 .choose .choose__text {
