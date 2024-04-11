@@ -103,7 +103,7 @@ html
 
 .aboutUs__services__card{
   @apply dark:bg-vdark mb-2 md:mb-0 lg:mb-0 pl-[1rem] py-[1rem] rounded-md relative z-[1] 
-  flex flex-row items-center gap-4 bg-lgrey
+  flex flex-row items-center gap-4 bg-lgrey 
 }
 .aboutUs__services__card::before{
   @apply content-[""] absolute top-0 left-0 h-[100%] w-0 bg-secondary z-[-1]
@@ -816,13 +816,13 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
       @apply py-[2rem] lg:pt-[8rem] xr:w-[90%] xr:mx-auto
     }
     .services__wrapper{
-      @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-6 overflow-hidden xr:grid xr:grid-cols-2
+      @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-6 overflow-hidden sm:flex sm:flex-wrap
     }
     .services__title{
       @apply lg:w-[50%] pb-4
     }
     .services__card{
-      @apply bg-lgrey mb-[1.5rem] md:mb-0 lg:mb-0 xr:mb-0 p-[2rem] relative z-[1] dark:bg-vdark 
+      @apply bg-lgrey mb-[1.5rem] md:mb-0 lg:mb-0 sm:mb-6 p-[2rem] relative z-[1] dark:bg-vdark 
     }
     .services__card::before{
       @apply content-[""] absolute top-0 left-0 h-[100%] w-0 bg-secondary z-[-1]
@@ -1031,17 +1031,18 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
     }
 
     .btn.bg--verb{
-      @apply bg-secondary text-primary border-secondary border-[1px] dark:text-vdark dark:border-[1px] dark:border-secondary;
+      @apply bg-secondary text-primary border-secondary border-[1px] dark:text-vdark dark:border-[1px] dark:border-secondary
+      transition-all duration-1000;
     }
     .btn.bg--verb:hover{
-      @apply text-clrtitle dark:text-primary bg-transparent border-transparent dark:border-transparent ease-in-out duration-300;
+      @apply text-clrtitle dark:text-primary bg-transparent border-transparent dark:border-transparent transition-all duration-1000;
     }
     .btn.bg--verb::after{
       @apply content-[""] bg-lgrey dark:bg-vdark absolute z-[-1] left-[-20%] right-[-20%] top-0 bottom-0 
-      skew-x-[45deg] scale-x-[0] scale-y-[1] transition-all duration-700  border-secondary;
+      skew-x-[45deg] scale-x-[0] scale-y-[1] transition-all duration-500  border-secondary;
     }
     .btn.bg--verb:hover::after{
-      @apply skew-x-[45deg] scale-x-[1] scale-y-[1] transition-all duration-700;
+      @apply skew-x-[45deg] scale-x-[1] scale-y-[1] transition-all duration-500;
     }
 
 
