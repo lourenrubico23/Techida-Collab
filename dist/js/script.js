@@ -78,6 +78,7 @@ const burgerMenu = document.querySelector(".burger__menu");
 const menu = document.querySelector(".header__action");
 burgerMenu.addEventListener("click", () =>{
     burgerMenu.classList.toggle("open");
+    burgerMenu.classList.toggle("active");
     menu.classList.toggle("open");
 });
 
