@@ -47,9 +47,7 @@ html
   rounded-full grid place-items-center text-[35px] text-vdark
 }
 
-.homebanner{
-  @apply xr:w-[90%] xr:mx-auto
-}
+
 .homebanner .homebanner__wrapper
 {
   @apply grid grid-cols-1 lg:grid-cols-2 lg:gap-[5rem] 
@@ -57,7 +55,7 @@ html
 }
 .homebanner__img img
 {
-  @apply lg:max-w-[40rem] md:max-w-[48rem] md:block lg:block xl:max-w-[50rem] xr:w-[70%] xr:mx-auto
+  @apply lg:max-w-[40rem] md:max-w-[48rem] md:block lg:block xl:max-w-[50rem] sm:w-[70%] sm:mx-auto
 }
 
 .homebanner .homebanner__text
@@ -78,7 +76,7 @@ html
 /* About Us */
 .aboutUs
 {
-  @apply pb-16 lg:pt-[5rem] overflow-hidden xr:w-[90%] xr:mx-auto
+  @apply pb-16 lg:pt-[5rem] overflow-hidden sm:w-[90%] sm:mx-auto
 }
 .aboutUs__item
 {
@@ -98,11 +96,11 @@ html
 } */
 
 .aboutUs__services__wrapper{
-  @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 gap-2 overflow-hidden xr:grid xr:grid-cols-2
+  @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 gap-2 overflow-hidden sm:grid sm:grid-cols-2
 }
 
 .aboutUs__services__card{
-  @apply dark:bg-vdark mb-2 md:mb-0 lg:mb-0 pl-[1rem] py-[1rem] rounded-md relative z-[1] 
+  @apply dark:bg-vdark mb-2 md:mb-0 lg:mb-0 sm:mb-0 pl-[1rem] py-[1rem] rounded-md relative z-[1] 
   flex flex-row items-center gap-4 bg-lgrey
 }
 .aboutUs__services__card::before{
@@ -148,7 +146,7 @@ html
 
 /* choose */
 .choose{
-  @apply lg:pt-[2rem] xr:w-[90%] xr:mx-auto
+  @apply lg:pt-[2rem] sm:w-[90%] sm:mx-auto
 }
 .choose .choose__text 
 {
@@ -164,16 +162,16 @@ html
 .choose__card
 {
   @apply md:flex md:flex-wrap md:gap-8
-  lg:grid lg:grid-cols-3 lg:gap-5 xr:flex xr:flex-wrap xr:gap-5 xr:justify-center
+  lg:grid lg:grid-cols-3 lg:gap-5 sm:flex sm:flex-wrap sm:gap-5 sm:justify-center
 }
 .choose__card__item
 {
-  @apply mb-[2rem] md:mb-0 lg:mb-0 md:w-[45%] lg:w-[100%] xr:w-[45%] xr:mb-0
+  @apply mb-[2rem] md:mb-0 lg:mb-0 md:w-[45%] lg:w-[100%] sm:w-[45%] sm:mb-0
 }
 
 .choose__card .choose__card__item:nth-child(3)
 {
-  @apply md:mx-auto xr:mx-auto
+  @apply md:mx-auto sm:mx-auto
 }
 .choose__card .choose__card__item
 {
@@ -192,7 +190,7 @@ html
 /* portfolio */
 .portfolio
 {
-  @apply pt-[4rem] overflow-hidden xr:w-[90%] xr:mx-auto
+  @apply pt-[4rem] overflow-hidden sm:w-[90%] sm:mx-auto
 }
 .portfolio__navs
 {
@@ -272,7 +270,7 @@ html
 /* counter */
 .counter
 {
-  @apply bg-vdark text-center mb-[5rem] xr:w-[90%] xr:mx-auto
+  @apply bg-vdark text-center mb-[5rem] sm:w-[90%] sm:mx-auto
 }
 .counter .counter__wrapper
 {
@@ -317,7 +315,7 @@ html
 /* logo slider */
 .logo__slider
 {
-  @apply bg-lgrey dark:bg-vdark lg:my-[5rem] xr:w-[90%] xr:mx-auto
+  @apply bg-lgrey dark:bg-vdark lg:my-[5rem] sm:w-[90%] sm:mx-auto
 }
 .logo__slider__wrapper
 {
@@ -332,7 +330,7 @@ html
 
 .testimonials 
 {
-  @apply cursor-grab select-none lg:pt-[4rem] xr:w-[90%] xr:mx-auto
+  @apply cursor-grab select-none lg:pt-[4rem] sm:w-[90%] sm:mx-auto
 }
 .testimonials .testimonials__cards
 {
@@ -472,11 +470,11 @@ html
 }
 .header__action__btn button:first-child
 {
-  @apply text-[1.3rem]
+  @apply text-[1rem] md:text-[1.2rem]
 }
 .header__action__btn button
 {
-  @apply m-3 translate-y-1
+  @apply m-3 translate-y-1 py-[.7rem] px-[1.2rem] md:py-[.6rem] md:px-[1.5rem] lg:py-[.7rem] lg:px-[2rem] lg:text-[1.4rem]
 }
 .header__action__btn i.fa-moon
 {
@@ -534,7 +532,7 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
 
 /* ---------------------------------BLOG PAGE---------------------- */
     .blog{
-      @apply py-[2rem] xr:w-[90%] xr:mx-auto;
+      @apply py-[2rem] sm:w-[90%] sm:mx-auto;
     }
     .blog__title p{
       @apply pb-[2rem] lg:max-w-[50rem];
@@ -546,11 +544,11 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
       @apply lg:text-[2.7rem];
     }
     .blog__card{
-      @apply bg-lgrey dark:bg-vdark mb-[1.5rem] lg:mb-0 md:mb-0 rounded-md border-none border-transparent w-full pb-[1.5rem] 
-      lg:w-full lg:rounded-md md:w-full;
+      @apply bg-lgrey dark:bg-vdark mb-[1.5rem] lg:mb-0 md:mb-0 sm:mb-[1.5rem] rounded-md border-none border-transparent w-full pb-[1.5rem] 
+      lg:w-full lg:rounded-md md:w-full sm:w-[93%] sm:w-full;
     }
     .blog__card img{
-      @apply rounded-md w-full md:w-full;
+      @apply rounded-md w-full md:w-full sm:w-full sm:w-full;
     }
     .blog__card img:hover{
       @apply opacity-80;
@@ -562,7 +560,7 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
       @apply pr-[.5rem] text-secondary;
     }
     .blog__card ul{
-      @apply flex flex-row gap-10 py-[1.1rem] justify-center lg:gap-10 md:gap-6;
+      @apply flex flex-row gap-10 py-[1.1rem] justify-center lg:gap-10 md:gap-6 sm:gap-[1rem];
     }
     .blog__card .card__text{
       @apply px-[1.1rem];
@@ -580,19 +578,21 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
       @apply px-[1.1rem];
     }
     .card__wrapper{
-      @apply gap-[1.5rem] overflow-hidden lg:grid lg:grid-cols-3 lg:gap-[1.3rem] md:grid md:grid-cols-2 md:gap-[1rem];
+      @apply gap-[1.5rem] overflow-hidden lg:grid lg:grid-cols-3 lg:gap-[1.3rem] md:grid md:grid-cols-2 md:gap-[1rem]
+      sm:grid sm:grid-cols-2 sm:gap-[0rem] sm:grid sm:grid-cols-2 sm:gap-[.5rem];
     }
 
     /* Blog - Home */
     .card__wrapper2{
-      @apply gap-[1.5rem] overflow-hidden lg:grid lg:grid-cols-3 lg:gap-[1.3rem] md:flex md:flex-wrap md:justify-center md:gap-[1.5rem];
+      @apply gap-[1.5rem] overflow-hidden lg:grid lg:grid-cols-3 lg:gap-[1.3rem] md:flex md:flex-wrap md:justify-center md:gap-[1.5rem]
+      sm:flex sm:flex-wrap sm:justify-center;
     }
     .card__wrapper2 .blog__card2:nth-child(3){
-      @apply md:mx-auto;
+      @apply md:mx-auto sm:mx-auto;
     }
     .blog__card2{
-      @apply bg-lgrey mb-[1.5rem] md:mb-0 lg:mb-0 dark:bg-vdark rounded-md border-none border-transparent w-full pb-[1.5rem] 
-      lg:w-full lg:rounded-md md:w-[47%];
+      @apply bg-lgrey mb-[1.5rem] md:mb-0 lg:mb-0 sm:mb-0 dark:bg-vdark rounded-md border-none border-transparent w-full pb-[1.5rem] 
+      lg:w-full lg:rounded-md md:w-[47%] sm:w-[46%];
     }
     .blog__card2 img{
       @apply rounded-md w-full md:w-full;
@@ -604,7 +604,7 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
       @apply pr-[.5rem] text-secondary;
     }
     .blog__card2 ul{
-      @apply flex flex-row gap-10 py-[1.1rem] justify-center lg:gap-10 md:gap-6;
+      @apply flex flex-row gap-10 py-[1.1rem] justify-center lg:gap-10 md:gap-6 sm:gap-2;
     }
     .blog__card2 .card__text{
       @apply px-[1.1rem];
@@ -630,7 +630,7 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
 
     /* -----------CONTACT----------- */
     .contact{
-      @apply py-[2rem] xr:w-[90%] xr:mx-auto;
+      @apply py-[2rem] sm:w-[90%] sm:mx-auto;
     }
     .contact__title p{
       @apply pb-[2rem] lg:max-w-[40rem] lg:text-[.9rem] md:text-[1rem];
@@ -677,7 +677,7 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
 
     /* -----------MAP----------- */
     .map{
-      @apply py-[2rem] overflow-hidden xr:w-[90%] xr:mx-auto;
+      @apply py-[2rem] overflow-hidden sm:w-[90%] sm:mx-auto;
     }
     /* .map__wrapper{
       @apply w-[23.5rem] lg:w-[80rem] md:w-[45rem];
@@ -688,7 +688,7 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
 
     /* -----------PRICING-HOME PAGE---------- */
     .pricing{
-      @apply py-[2rem] xr:w-[90%] xr:mx-auto;
+      @apply py-[2rem] sm:w-[90%] sm:mx-auto;
     }
     .pricing__title p{
       @apply pb-[2rem] lg:max-w-[40rem] lg:text-[.9rem] md:text-[1rem];
@@ -724,7 +724,8 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
       @apply text-center;
     }
     .pcard__wrapper{
-      @apply grid grid-cols-1 overflow-hidden gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-4;
+      @apply grid grid-cols-1 overflow-hidden gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-4
+      sm:grid sm:grid-cols-2;
     }
     .pcard:nth-child(3){
       @apply bg-secondary;
@@ -765,7 +766,7 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
 
     /* -----------TEAM-HOME PAGE---------- */
     .team{
-      @apply py-[2rem] xr:w-[90%] xr:mx-auto;
+      @apply py-[2rem] sm:w-[90%] sm:mx-auto;
     }
     .team__title p{
       @apply pb-[2rem] lg:max-w-[40rem] lg:text-[.9rem] md:text-[1rem];
@@ -792,7 +793,8 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
       @apply text-center;
     }
     .tcard__wrapper{
-      @apply grid grid-cols-1 overflow-hidden gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-4;
+      @apply grid grid-cols-1 overflow-hidden gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-4 
+      sm:grid sm:grid-cols-2;
     }
 
     
@@ -802,7 +804,7 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
       @apply bg-bgfooter text-white pt-[8rem] pb-[3rem] 
     }
     .banner__wrapper{
-      @apply xr:w-[90%] xr:mx-auto
+      @apply sm:w-[90%] sm:mx-auto
     }
     .bannernav a{
       @apply text-white 
@@ -813,16 +815,16 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
 
     /* ---------SERVICES CARDS------- */
     .services{
-      @apply py-[2rem] lg:pt-[8rem] xr:w-[90%] xr:mx-auto
+      @apply py-[2rem] lg:pt-[8rem] sm:w-[90%] sm:mx-auto
     }
     .services__wrapper{
-      @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-6 overflow-hidden xr:grid xr:grid-cols-2
+      @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-6 overflow-hidden sm:grid sm:grid-cols-2
     }
     .services__title{
       @apply lg:w-[50%] pb-4
     }
     .services__card{
-      @apply bg-lgrey mb-[1.5rem] md:mb-0 lg:mb-0 xr:mb-0 p-[2rem] relative z-[1] dark:bg-vdark 
+      @apply bg-lgrey mb-[1.5rem] md:mb-0 lg:mb-0 sm:mb-0 p-[2rem] relative z-[1] dark:bg-vdark 
     }
     .services__card::before{
       @apply content-[""] absolute top-0 left-0 h-[100%] w-0 bg-secondary z-[-1]
@@ -849,7 +851,7 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
 
     /* ---------FAQ----------- */
     .faq{
-      @apply py-[2rem] overflow-hidden xr:w-[90%] xr:mx-auto
+      @apply py-[2rem] overflow-hidden sm:w-[90%] sm:mx-auto
     }
     .faq__wrapper{
       @apply flex flex-col lg:grid grid-cols-2 gap-3
@@ -886,7 +888,7 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
 
     /* -------------FOOTER--------- */
     .footer{
-      @apply bg-bgfooter py-[1.5rem] xr:w-[90%] xr:mx-auto
+      @apply bg-bgfooter py-[1.5rem] sm:w-[90%] sm:mx-auto
     }
     .footer__wrapper{
       @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-4 gap-5 items-center pb-5 
@@ -966,16 +968,16 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
       src: url("../fonts/Outfit-SemiBold.ttf") ;
     }
     h1 {
-        @apply text-[3rem] font-outfitbold font-[790] xr:text-[2.5rem];
+        @apply text-[3rem] font-outfitbold font-[790] sm:text-[2.5rem];
       }
       h2 {
-        @apply text-[2.7rem] font-outfitbold text-clrtitle font-[790]
+        @apply text-[2.7rem] font-outfitbold text-clrtitle font-[790] sm:text-[2.3rem]
       }
       h3 {
         @apply text-[1.5rem] font-outfitsemibold font-[700];
       }
       h4{
-        @apply text-[1.2rem] font-outfitbold text-secondary font-[790]
+        @apply text-[1.2rem] font-outfitbold text-secondary font-[790] sm:text-[1rem]
       }
       h5{
         @apply text-[1.3rem] font-outfitbold font-semibold text-crdtitle
@@ -1003,7 +1005,8 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
       @apply border-secondary border-[1px] ease-in-out duration-300;
     }
     .btn.bg--vera{
-      @apply bg-secondary text-primary dark:text-vdark border-secondary border-[1px] dark:border-[1px] dark:border-secondary;
+      @apply bg-secondary text-primary dark:text-vdark border-secondary border-[1px] dark:border-[1px] dark:border-secondary
+      text-[1rem] py-[.5rem] px-[1.4rem] md:text-[1.2rem] lg:py-[.7rem] lg:px-[1.6rem] lg:text-[1.3rem];
     }
     .btn.bg--vera:hover{
       @apply text-clrtitle dark:text-primary bg-transparent border-transparent dark:border-transparent ease-in-out duration-300;
@@ -1017,7 +1020,8 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
     }
 
     .btn.bg--vera-w{
-      @apply bg-primary text-secondary dark:bg-darkmode;
+      @apply bg-primary text-secondary dark:bg-darkmode
+      text-[1rem] py-[.5rem] px-[1.4rem] md:text-[1.2rem] lg:py-[.7rem] lg:px-[1.6rem] lg:text-[1.3rem];
     }
     .btn.bg--vera-w:hover{
       @apply text-secondary;
@@ -1031,7 +1035,8 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
     }
 
     .btn.bg--verb{
-      @apply bg-secondary text-primary border-secondary border-[1px] dark:text-vdark dark:border-[1px] dark:border-secondary;
+      @apply bg-secondary text-primary border-secondary border-[1px] dark:text-vdark dark:border-[1px] dark:border-secondary
+      text-[1rem] py-[.5rem] px-[1.4rem] md:text-[1.2rem] lg:py-[.7rem] lg:px-[1.8rem] lg:text-[1.4rem];
     }
     .btn.bg--verb:hover{
       @apply text-clrtitle dark:text-primary bg-transparent border-transparent dark:border-transparent ease-in-out duration-300;
