@@ -26,7 +26,14 @@ html
 {
   @apply bg-lgrey
 }
-
+.burger__menu.active
+{
+  @apply border-[.2rem] border-vdark dark:border-primary py-2 px-1 rounded-md
+}
+.burger__menu
+{
+  @apply p-2
+}
 /* ---------------------------------HOME PAGE START---------------------- */
 #progressTop
 {
@@ -42,7 +49,8 @@ html
 
 .homebanner .homebanner__wrapper
 {
-  @apply grid grid-cols-1 lg:grid-cols-2 lg:gap-[5rem]  place-items-center lg:pt-[10rem] pt-[6rem] overflow-hidden
+  @apply grid grid-cols-1 lg:grid-cols-2 lg:gap-[5rem] 
+   place-items-center lg:pt-[10rem] pt-[6rem] overflow-hidden
 }
 .homebanner__img img
 {
@@ -56,7 +64,8 @@ html
 
 .homebanner .homebanner__text p
 {
-  @apply text-[1rem] lg:text-[1rem] leading-[2rem] md:leading-[2.5rem] lg:leading-[2rem] pt-[1rem] pb-[1rem] 
+  @apply text-[1rem] lg:text-[1rem] 
+  leading-[2rem] md:leading-[2.5rem] lg:leading-[2rem] pt-[1rem] pb-[1rem] 
 }
 #particles-js
 {
@@ -372,7 +381,7 @@ html
 /* ---------------------------------HOME PAGE HEADER START---------------------- */
 .header
 {
-  @apply bg-primary 
+  @apply bg-primary dark:bg-vdark
 }
 .header img
 {
@@ -392,13 +401,13 @@ html
 }
 .header__action
 {
-  @apply absolute top-[95px] left-0 right-0 h-0 z-[1]
+  @apply dark:bg-vdark absolute top-[95px] left-0 right-0 max-h-0 z-[1]
   px-0 pt-0 overflow-hidden transition-all shadow-md 
-  bg-primary lg:opacity-0 lg:flex lg:flex-col dark:bg-vdark;
+  bg-primary lg:opacity-0 lg:flex lg:flex-col ;
 }
 .header__action.open
 {
-  @apply h-fit transition-all z-[1] duration-500 ease-in-out 
+  @apply max-h-[50rem] transition-all z-[1] duration-500 ease-in-out 
   lg:hidden     
 }
 .header__wrapper
@@ -410,7 +419,7 @@ html
 }
 .header__action .header__navm
 {
-  @apply flex flex-col gap-5 bg-primary px-3 lg:hidden dark:bg-vdark; 
+  @apply flex flex-col px-3 lg:hidden; 
 }
 
 /* drop down start */
@@ -420,7 +429,7 @@ html
 }
 .header__action .header__navm .dropbtn
 {
-  @apply bg-primary
+  @apply
  border-none
   cursor-pointer
 }
@@ -447,11 +456,14 @@ html
 }
 .header__action .header__navm li a
 {
-  @apply font-medium md:text-[1.3rem] lg:text-[1.3rem] text-[1rem] 
+  @apply font-medium  md:text-[1.3rem] lg:text-[1.3rem] text-[1rem] 
    text-vdark dark:text-lgrey
   ease-in-out duration-100 delay-150
  opacity-100 hover:py-[.5rem] hover:text-secondary
   hover:delay-300 hover:bg-opacity-25;
+}
+.header__navm li{
+  @apply mb-[1rem]
 }
 .header__action__btn button:first-child
 {
