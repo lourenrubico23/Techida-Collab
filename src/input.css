@@ -94,7 +94,10 @@ html
 {
   @apply text-[1rem] pb-[1rem]
 } */
-
+.aboutUs__image img
+{
+  @apply sm:w-[70%] sm:mx-auto
+}
 .aboutUs__services__wrapper{
   @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 gap-2 overflow-hidden sm:grid sm:grid-cols-2
 }

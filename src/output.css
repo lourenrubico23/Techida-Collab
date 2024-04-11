@@ -3158,6 +3158,14 @@ html {
   @apply text-[1rem] pb-[1rem]
 } */
 
+@media (min-width: 640px) {
+  .aboutUs__image img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+}
+
 .aboutUs__services__wrapper {
   gap: 0.5rem;
   overflow: hidden;
