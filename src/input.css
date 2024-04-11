@@ -86,11 +86,11 @@ html
 } */
 
 .aboutUs__services__wrapper{
-  @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 gap-6 overflow-hidden
+  @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-2 gap-2 overflow-hidden
 }
 
 .aboutUs__services__card{
-  @apply dark:bg-vdark mb-3 lg:mb-0 pl-[1rem] py-[1rem] rounded-md relative z-[1] 
+  @apply dark:bg-vdark mb-2 md:mb-0 lg:mb-0 pl-[1rem] py-[1rem] rounded-md relative z-[1] 
   flex flex-row items-center gap-4 bg-lgrey
 }
 .aboutUs__services__card::before{
@@ -108,7 +108,7 @@ html
   @apply text-[1.8rem] text-secondary pt-3 pb-3
 }
 .aboutUs__services__card p{
-  @apply text-bgfooter dark:text-primary md:pt-[1rem] lg:pt-0 font-extrabold
+  @apply text-bgfooter dark:text-primary lg:pt-0 font-extrabold 
 }
 
 .aboutUs__progress
@@ -135,6 +135,9 @@ html
 }
 
 /* choose */
+.choose{
+  @apply py-[2rem]
+}
 .choose .choose__text 
 {
  @apply pr-[2rem]
@@ -143,6 +146,9 @@ html
 {
  @apply text-[2rem] font-bold
 }
+.choose .choose__text p{
+  @apply pb-[1rem]
+}
 .choose__card
 {
   @apply md:flex md:flex-wrap md:gap-8
@@ -150,7 +156,7 @@ html
 }
 .choose__card__item
 {
-  @apply md:w-[45%] lg:w-[100%]
+  @apply mb-[2rem] md:mb-0 lg:mb-0 md:w-[45%] lg:w-[100%]
 }
 
 .choose__card .choose__card__item:nth-child(3)
@@ -159,11 +165,7 @@ html
 }
 .choose__card .choose__card__item
 {
-  @apply bg-lgrey dark:bg-vdark px-[1rem] py-[2rem] mb-6 rounded-md
-}
-.choose__card .choose__card__item:first-child
-{
-  @apply mt-3
+  @apply bg-lgrey dark:bg-vdark px-[1rem] py-[2rem] rounded-md
 }
 .choose__card .choose__card__item h4
 {
@@ -182,7 +184,7 @@ html
 }
 .portfolio__navs
 {
-  @apply flex flex-wrap gap-5
+  @apply flex flex-wrap gap-5;
 }
 .portfolio .active
 {
@@ -210,7 +212,7 @@ html
 }
 .portfolio__navs button
 {
-  @apply text-[1.3rem] md:text-[1.5rem] font-bold
+  @apply text-[1.3rem] md:text-[1.5rem] font-bold text-clrtext
 }
 
 .portfolio__images__intro
@@ -529,8 +531,8 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
       @apply lg:text-[2.7rem];
     }
     .blog__card{
-      @apply bg-lgrey dark:bg-vdark mb-6 rounded-md border-none border-transparent w-full pb-[1.5rem] 
-      lg:w-full lg:rounded-md md:w-full md:mb-[1rem];
+      @apply bg-lgrey dark:bg-vdark mb-[1.5rem] lg:mb-0 md:mb-0 rounded-md border-none border-transparent w-full pb-[1.5rem] 
+      lg:w-full lg:rounded-md md:w-full;
     }
     .blog__card img{
       @apply rounded-md w-full md:w-full;
@@ -574,8 +576,8 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
       @apply md:mx-auto;
     }
     .blog__card2{
-      @apply bg-lgrey dark:bg-vdark mb-6 rounded-md border-none border-transparent w-full pb-[1.5rem] 
-      lg:w-full lg:rounded-md md:w-[47%] md:mb-[1rem];
+      @apply bg-lgrey mb-[1.5rem] md:mb-0 lg:mb-0 dark:bg-vdark rounded-md border-none border-transparent w-full pb-[1.5rem] 
+      lg:w-full lg:rounded-md md:w-[47%];
     }
     .blog__card2 img{
       @apply rounded-md w-full md:w-full;
@@ -601,7 +603,7 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
     /* Blog - Home Ends */
 
     .blog__btn{
-      @apply flex flex-row gap-3 justify-center;
+      @apply p-[1.5rem] flex flex-row gap-3 justify-center;
     }
     .blog__btn li a{
       @apply bg-lgrey dark:bg-vdark dark:text-primary rounded-full py-[.3rem] px-[.7rem] font-normal hover:bg-secondary text-vdark
