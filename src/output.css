@@ -1906,6 +1906,12 @@ a {
   padding-bottom: 2rem;
 }
 
+@media (min-width: 1024px) {
+  .services {
+    padding-top: 8rem;
+  }
+}
+
 .services__wrapper {
   gap: 1.5rem;
   overflow: hidden;
@@ -2284,11 +2290,6 @@ body h1:is(.dark *), h2:is(.dark *) {
 
 .top-\[-28px\] {
   top: -28px;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .mb-4 {
@@ -2801,7 +2802,7 @@ html {
 #particles-js {
   position: absolute;
   z-index: -1;
-  height: 80%;
+  height: 90%;
   width: 100%;
 }
 
@@ -2814,8 +2815,7 @@ html {
 
 @media (min-width: 1024px) {
   .aboutUs {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 5rem;
   }
 }
 
@@ -3023,6 +3023,12 @@ html {
 
 /* choose */
 
+@media (min-width: 1024px) {
+  .choose {
+    padding-top: 2rem;
+  }
+}
+
 .choose .choose__text {
   padding-right: 2rem;
 }
@@ -3103,8 +3109,7 @@ html {
 
 .portfolio {
   overflow: hidden;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
 }
 
 .portfolio__navs {
@@ -3355,8 +3360,8 @@ html {
 
 @media (min-width: 1024px) {
   .logo__slider {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 }
 
@@ -3387,6 +3392,12 @@ html {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+@media (min-width: 1024px) {
+  .testimonials {
+    padding-top: 4rem;
+  }
 }
 
 .testimonials .testimonials__cards {

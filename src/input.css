@@ -60,13 +60,13 @@ html
 }
 #particles-js
 {
-  @apply absolute w-[100%] h-[80%] z-[-1]
+  @apply absolute w-[100%] h-[90%] z-[-1]
 }
 
 /* About Us */
 .aboutUs
 {
-  @apply pb-16 lg:py-[2rem] overflow-hidden
+  @apply pb-16 lg:pt-[5rem] overflow-hidden
 }
 .aboutUs__item
 {
@@ -135,6 +135,9 @@ html
 }
 
 /* choose */
+.choose{
+  @apply lg:pt-[2rem]
+}
 .choose .choose__text 
 {
  @apply pr-[2rem]
@@ -178,7 +181,7 @@ html
 /* portfolio */
 .portfolio
 {
-  @apply py-[2rem] overflow-hidden
+  @apply pt-[4rem] overflow-hidden
 }
 .portfolio__navs
 {
@@ -303,7 +306,7 @@ html
 /* logo slider */
 .logo__slider
 {
-  @apply bg-lgrey dark:bg-vdark lg:my-[2rem]
+  @apply bg-lgrey dark:bg-vdark lg:my-[5rem]
 }
 .logo__slider__wrapper
 {
@@ -318,7 +321,7 @@ html
 
 .testimonials 
 {
-  @apply cursor-grab select-none
+  @apply cursor-grab select-none lg:pt-[4rem]
 }
 .testimonials .testimonials__cards
 {
@@ -793,7 +796,7 @@ rounded-full pr-[1.1rem] pl-[1.1rem] py-[1rem]
 
     /* ---------SERVICES CARDS------- */
     .services{
-      @apply py-[2rem] 
+      @apply py-[2rem] lg:pt-[8rem]
     }
     .services__wrapper{
       @apply md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 gap-6 overflow-hidden
