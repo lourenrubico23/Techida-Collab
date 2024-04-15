@@ -14,11 +14,11 @@
 <body class=" bg-primary dark:bg-darkmode transition-all ease-out duration-300">
     
     <div id="progressTop">
-        <span id="progressTop-value">&#x1F815</span>
+        <span id="progressTop-value"><i class="fa-solid fa-arrow-up"></i></span>
     </div>
 
-    <div class="wrapper pb-[3rem] ">
-            <header class="header ">
+    <div class="wrapper">
+            <header class="header">
             <div class="container ">
                 <div class="header__wrapper ">
                     <a href="#"><img src="./img/home/logo.png" alt=""></a>
@@ -316,7 +316,7 @@
                 <div class="choose__card">
                 <div class="choose__card__item">
                 <h4>01.</h4>
-                <h6>Latest Technologies</h6>
+                <h3>Latest Technologies</h3>
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
                      Optio Unde, Exped Ita Nesciunt Quibusdam Quis Tempore 
                      Quas Tenetur</p>
@@ -325,7 +325,7 @@
 
                 <div class="choose__card__item">
                     <h4>02.</h4>
-                    <h6>Unique Solutions</h6>
+                    <h3>Unique Solutions</h3>
                     <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
                          Optio Unde, Exped Ita Nesciunt Quibusdam Quis Tempore 
                          Quas Tenetur</p>
@@ -333,7 +333,7 @@
 
                     <div class="choose__card__item">
                         <h4>03.</h4>
-                        <h6>Powerful Strategies</h6>
+                        <h3>Powerful Strategies</h3>
                         <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
                              Optio Unde, Exped Ita Nesciunt Quibusdam Quis Tempore 
                              Quas Tenetur</p>
@@ -924,12 +924,6 @@
                 </div>
             </div>
             </div>
-            <ul class="blog__btn">
-                <li data-aos="fade-up" data-aos-delay="100"><a href="">1</a></li>
-                <li data-aos="fade-up" data-aos-delay="150"><a href="">2</a></li>
-                <li data-aos="fade-up" data-aos-delay="200"><a href="">3</a></li>
-                <li data-aos="fade-up" data-aos-delay="250"><a href="">4</a></li>
-            </ul>
     </section>
 
     <!-- BLOG ENDS -->
@@ -1135,6 +1129,10 @@
             gutter: 20,
             items: 1
           },
+          640:{
+            gutter: 15,
+            items: 2
+        },
           700: {
             gutter: 20,
             items: 2
@@ -1164,12 +1162,16 @@
         gutter: 20,
         items: 2
       },
+      640:{
+        gutter: 15,
+        items: 3
+      },
       700: {
         gutter: 30,
         items: 3
       },
       900: {
-        items: 5
+        items: 6
       }
     }
     
