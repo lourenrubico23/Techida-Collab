@@ -2092,13 +2092,8 @@ a {
 
 @media (min-width: 640px) {
   .services__wrapper {
-<<<<<<< HEAD
     display: flex;
     flex-wrap: wrap;
-=======
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
->>>>>>> ella
   }
 }
 
@@ -2142,11 +2137,7 @@ a {
 
 @media (min-width: 640px) {
   .services__card {
-<<<<<<< HEAD
     margin-bottom: 1.5rem;
-=======
-    margin-bottom: 0px;
->>>>>>> ella
   }
 }
 
@@ -2829,11 +2820,6 @@ body h1:is(.dark *), h2:is(.dark *) {
   border-color: rgb(30 168 79 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(30 168 79 / var(--tw-bg-opacity));
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
-  font-size: 1rem;
   --tw-text-opacity: 1;
   color: rgb(248 246 244 / var(--tw-text-opacity));
   transition-property: all;
@@ -2847,22 +2833,6 @@ body h1:is(.dark *), h2:is(.dark *) {
   border-color: rgb(30 168 79 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgb(33 33 33 / var(--tw-text-opacity));
-}
-
-@media (min-width: 768px) {
-  .btn.bg--verb {
-    font-size: 1.2rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .btn.bg--verb {
-    padding-top: .7rem;
-    padding-bottom: .7rem;
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
-    font-size: 1.4rem;
-  }
 }
 
 .btn.bg--verb:hover {
